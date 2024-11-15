@@ -231,64 +231,18 @@ body {
     justify-content: center;
 }
 
-/* Card1 Style */
-.card1-container a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.card-container a.card1 {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 200px;
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-    text-align: center;
-    display: block;
-}
-
-.card-container a.card1:hover {
-    transform: translateY(-5px);
-}
-
-.card-container a.card1 img {
-    width: 100%;
-    height: auto;
-}
-
-.card-container a .card1-text {
-    padding: 15px;
-}
-
-.card-container a .card1-text h2 {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 10px 0 0;
-    position: relative;
-}
-
-.card-container a .card1-text h2::after {
-    content: "";
-    display: block;
-    width: 30px;
-    height: 2px;
-    background-color: #000;
-    margin: 8px auto 0;
-}
-
-/* Card2 Style */
+/* General Card Styles */
 .card-container a {
     text-decoration: none;
     color: inherit;
 }
 
-.card-container a.card2 {
+.card-container a.card {
     background-color: #fff;
     border: 1px solid #ddd;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 200px;
+    width: 200px; /* Consistent width for all cards */
+    height: 300px; /* Set a fixed height for uniformity */
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s ease;
@@ -296,27 +250,33 @@ body {
     display: block;
 }
 
-.card-container a.card2:hover {
+.card-container a.card:hover {
     transform: translateY(-5px);
 }
 
-.card-container a.card2 img {
+.card-container a.card img {
     width: 100%;
-    height: auto;
+    height: 150px; /* Fixed height for images to ensure consistency */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
 }
 
-.card-container a .card2-text {
+.card-container .card-text {
     padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 150px); /* Adjust the height of the text section */
 }
 
-.card-container a .card2-text h2 {
+.card-container .card-text h2 {
     font-size: 20px;
     font-weight: bold;
     margin: 10px 0 0;
     position: relative;
 }
 
-.card-container a .card2-text h2::after {
+.card-container .card-text h2::after {
     content: "";
     display: block;
     width: 30px;
@@ -325,52 +285,6 @@ body {
     margin: 8px auto 0;
 }
 
-/* Card3 Style */
-.card-container a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.card-container a.card3 {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 200px;
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-    text-align: center;
-    display: block;
-}
-
-.card-container a.card3:hover {
-    transform: translateY(-5px);
-}
-
-.card-container a.card3 img {
-    width: 100%;
-    height: auto;
-}
-
-.card3-container a .card1-text {
-    padding: 15px;
-}
-
-.card-container a .card3-text h2 {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 10px 0 0;
-    position: relative;
-}
-
-.card-container a .card1-text h2::after {
-    content: "";
-    display: block;
-    width: 30px;
-    height: 2px;
-    background-color: #000;
-    margin: 8px auto 0;
-}
 
 
 /* Footer Styling */
