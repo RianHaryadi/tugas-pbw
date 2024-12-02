@@ -1,130 +1,162 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bali</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com" rel="stylesheet">
-    <link rel="stylesheet" href="home.css">
+<!DOCTYPE html>
+<html lang="id"><head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Bali - Pulau Dewata</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prata&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+    <link href="https://ai-public.creatie.ai/gen_page/tailwind-custom.css" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com/3.4.5?plugins=forms@0.5.7,typography@0.5.13,aspect-ratio@0.4.2,container-queries@0.1.1"></script>
+    <script src="https://ai-public.creatie.ai/gen_page/tailwind-config.min.js" data-color="#000000" data-border-radius="small"></script>
 </head>
-<body>
+<body class="font-[&#39;Inter&#39;]">
+    <body class="font-[Poppins] bg-gray-50">
+        <nav class="bg-white shadow">
+            <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between h-16">
+                    <div class="flex">
+                        <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                            <a href="#" class="border-custom text-custom inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Beranda</a>
+                            <a href="#" class="border-transparent text-gray-500 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Artikel</a>
+                            <a href="#" class="border-transparent text-gray-500 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Galeri</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    
 
-<!-- Background Container with Blurred Image -->
-<div class="bg-container">
-    <!-- Background Image -->
-    <img class="bg-img" src="/img/Background/option 1.jpg" alt="Background Image">
+    <main>
+        <section class="relative h-[600px] mt-16">
+            <img src="/img/Background/option 1.jpg" class="w-full h-full object-cover" alt="Pura Ulun Danu Beratan"/>
+            <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+            <div class="absolute inset-0 flex items-center justify-center">
+                <div class="text-center">
+                    <h1 class="text-6xl font-[&#39;Prata&#39;] text-white mb-6">Bali</h1>
+                    <p class="text-xl text-white max-w-2xl mx-auto">Jelajahi keindahan Pulau Dewata dengan pengalaman yang tak terlupakan</p>
+                </div>
+            </div>
+        </section>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-transparent position-absolute w-100">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">ARTIKEL</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">GALLERY</a>
-                    </li>
-                </ul>
+        <section class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-2 gap-12">
+                    <div class="space-y-6">
+                        <h2 class="text-4xl font-[&#39;Prata&#39;] text-custom">Tentang Bali</h2>
+                        <p class="text-gray-600 leading-relaxed">Bali adalah sebuah pulau di Indonesia yang terkenal dengan keindahan alamnya yang memukau, budaya yang kaya, dan keramahan penduduknya. Dari pantai yang menakjubkan hingga terasering sawah yang hijau, dari upacara keagamaan yang megah hingga seni tradisional yang memesona, Bali menawarkan pengalaman yang tak terlupakan bagi setiap pengunjungnya.</p>
+                        <button class="bg-custom text-white px-8 py-3 !rounded-button font-medium">Pelajari Lebih Lanjut</button>
+                    </div>
+                    <div>
+                        <img src="https://creatie.ai/ai/api/search-image?query=Traditional Balinese dancers performing in vibrant costumes against a temple backdrop, with warm lighting and atmospheric details capturing the cultural essence of Bali&width=600&height=400&orientation=landscape&flag=65988f77-2557-4cbd-b3ca-6bc29a17caca&flag=01175a8d-eae7-49da-90fe-24c86b526ce0&flag=b1de2e03-30b1-4957-88e0-d1aa99ab508b" class="rounded-lg shadow-lg w-full h-[400px] object-cover" alt="Tarian Bali"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-[&#39;Prata&#39;] text-custom text-center mb-16">Aktivitas Populer</h2>
+                <div class="grid grid-cols-3 gap-8">
+                    <div class="rounded-lg overflow-hidden shadow-lg">
+                        <img src="https://creatie.ai/ai/api/search-image?query=Hikers trekking through lush green rice terraces in Bali with dramatic mountain views in the background, morning mist creating an ethereal atmosphere&width=400&height=300&orientation=landscape&flag=0da1eff9-0cbf-4702-aa42-61d16a672051&flag=2a5614a4-4a01-4926-b0e5-027d35cb35ad&flag=99bd41aa-a84f-421c-9872-b9026c59837c" class="w-full h-48 object-cover" alt="Trekking"/>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-3">Trekking</h3>
+                            <p class="text-gray-600 mb-4">Jelajahi keindahan alam Bali dengan trekking di jalur-jalur yang menakjubkan, dari Gunung Batur hingga terasering sawah.</p>
+                            <button class="bg-custom text-white px-6 py-2 !rounded-button w-full">Lihat Detail</button>
+                        </div>
+                    </div>
+                    <div class="rounded-lg overflow-hidden shadow-lg">
+                        <img src="https://creatie.ai/ai/api/search-image?query=Snorkelers exploring vibrant coral reefs with tropical fish in crystal clear turquoise waters off the coast of Bali, underwater photography with perfect visibility&width=400&height=300&orientation=landscape&flag=badeb12c-dd83-4df4-9659-48701116b067&flag=bd5bcd8f-4017-4eaf-88e1-2cda57395b34&flag=7d316d79-481d-43f6-8c4a-d90d2826c619" class="w-full h-48 object-cover" alt="Snorkeling"/>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-3">Snorkeling</h3>
+                            <p class="text-gray-600 mb-4">Temukan keindahan bawah laut Bali dengan snorkeling di spot-spot terbaik seperti Nusa Penida dan Amed.</p>
+                            <button class="bg-custom text-white px-6 py-2 !rounded-button w-full">Lihat Detail</button>
+                        </div>
+                    </div>
+                    <div class="rounded-lg overflow-hidden shadow-lg">
+                        <img src="https://creatie.ai/ai/api/search-image?query=White water rafting adventure through dramatic river gorges in Bali, surrounded by lush tropical vegetation and ancient stone carvings&width=400&height=300&orientation=landscape&flag=3edc3970-e0ba-4bc8-8dc9-f2c71086bda6&flag=63db6d6a-7027-457c-befa-89d29ef2dccf&flag=62959530-687d-4d48-9432-c311b72be322" class="w-full h-48 object-cover" alt="Rafting"/>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-3">Rafting</h3>
+                            <p class="text-gray-600 mb-4">Rasakan sensasi petualangan dengan rafting di Sungai Ayung atau Telaga Waja yang menantang.</p>
+                            <button class="bg-custom text-white px-6 py-2 !rounded-button w-full">Lihat Detail</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-[&#39;Prata&#39;] text-custom text-center mb-16">Eksplore Bali</h2>
+                <div class="grid grid-cols-3 gap-8">
+                    <div class="group relative overflow-hidden rounded-lg">
+                        <img src="/" class="w-full h-[500px] object-cover transform group-hover:scale-105 transition-transform duration-300" alt="Pantai"/>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                        <div class="absolute bottom-0 left-0 p-8">
+                            <h3 class="text-2xl font-semibold text-white mb-2">Pantai</h3>
+                            <p class="text-white opacity-90">Nikmati keindahan pantai-pantai eksotis Bali</p>
+                        </div>
+                    </div>
+                    <div class="group relative overflow-hidden rounded-lg">
+                        <img src="https://creatie.ai/ai/api/search-image?query=Majestic sunrise view of Mount Agung volcano in Bali with dramatic clouds and lush tropical forest in the foreground&width=400&height=500&orientation=portrait&flag=5f1673ba-2200-4901-a5b3-27a6c75cdaae&flag=11e0c4dc-f328-490d-a12d-1b7904986ab3&flag=7dc17658-7ffc-4c9d-8fd9-26554e4a81b7" class="w-full h-[500px] object-cover transform group-hover:scale-105 transition-transform duration-300" alt="Gunung"/>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                        <div class="absolute bottom-0 left-0 p-8">
+                            <h3 class="text-2xl font-semibold text-white mb-2">Gunung</h3>
+                            <p class="text-white opacity-90">Jelajahi keindahan gunung-gunung di Bali</p>
+                        </div>
+                    </div>
+                    <div class="group relative overflow-hidden rounded-lg">
+                        <img src="https://creatie.ai/ai/api/search-image?query=Ancient Balinese temple gates and courtyards at sunset with traditional architecture, stone carvings, and ceremonial decorations&width=400&height=500&orientation=portrait&flag=ac766306-57b5-4638-98c0-58d5a02c77e2&flag=95ebcd26-50ae-44cf-9c10-9ae8c685b053&flag=5d93f1bb-69fa-4c01-b922-2fc641a52f77" class="w-full h-[500px] object-cover transform group-hover:scale-105 transition-transform duration-300" alt="Pura"/>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                        <div class="absolute bottom-0 left-0 p-8">
+                            <h3 class="text-2xl font-semibold text-white mb-2">Pura</h3>
+                            <p class="text-white opacity-90">Kunjungi pura-pura bersejarah di Bali</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-custom text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-4 gap-8">
+                <div>
+                    <img src="https://ai-public.creatie.ai/gen_page/logo_placeholder.png" alt="Logo" class="h-8 mb-4"/>
+                    <p class="text-sm opacity-80">Temukan keindahan dan keajaiban Pulau Dewata bersama kami.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Tautan</h4>
+                    <ul class="space-y-2 text-sm opacity-80">
+                        <li><a href="#" class="hover:opacity-100">Tentang Kami</a></li>
+                        <li><a href="#" class="hover:opacity-100">Layanan</a></li>
+                        <li><a href="#" class="hover:opacity-100">Destinasi</a></li>
+                        <li><a href="#" class="hover:opacity-100">Kontak</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Kontak</h4>
+                    <ul class="space-y-2 text-sm opacity-80">
+                        <li><i class="fas fa-phone mr-2"></i> +62 361 123456</li>
+                        <li><i class="fas fa-envelope mr-2"></i> info@balitour.com</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i> Jl. Sunset Road No. 88, Kuta, Bali</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Media Sosial</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:opacity-80"><i class="fab fa-facebook-f text-xl"></i></a>
+                        <a href="#" class="hover:opacity-80"><i class="fab fa-instagram text-xl"></i></a>
+                        <a href="#" class="hover:opacity-80"><i class="fab fa-twitter text-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-white border-opacity-20 mt-8 pt-8 text-center text-sm opacity-80">
+                <p>© 2024 Bali Tour. Hak Cipta Dilindungi.</p>
             </div>
         </div>
-    </nav>
+    </footer>
 
-    <!-- Text "Bali" -->
-    <div class="text-container">
-        <h1>Bali</h1>
-    </div>
-</div>
 
-<!-- Additional Content Below the Main Section -->
-<div class="container content-container">
-    <!-- Main Image -->
-    <div>
-        <img src="/img/stand/kecak.jpg" alt="Main Bali Culture" class="main-image">
-    </div>
 
-    <!-- Text Section -->
-    <div class="text-section">
-        <p>Bali adalah sebuah pulau di Indonesia yang kaya akan budaya, alam, dan kehidupan spiritual yang unik.</p>
-        <p>Seni dan kerajinan juga menjadi bagian tak terpisahkan dari kehidupan masyarakat Bali. Seni tari seperti Kecak, Legong, dan Barong</p>
-        <a href="#" class="view-more">Liat Lebih Banyak</a>
-
-        <!-- Smaller Images -->
-        <div class="small-images">
-            <img src="/img/stand/legong dance.jpg" alt="Legong Dance" class="small-image">
-            <img src="/img/stand/barong.jpg" alt="Barong Dance" class="small-image">
-        </div>
-    </div>
-</div>
-
-<!-- Adventure Section -->
-<<div class="container">
-    <div class="title">Adventure</div>
-    <div class="content">
-        <div class="adventure">
-            <div class="text-content1">
-                <h2>Haiking</h2>
-                <p>Hiking di Bali menawarkan petualangan alam yang menakjubkan, dari sunrise di puncak Gunung Batur hingga trekking di jalur Campuhan Ridge Walk di Ubud. Gunung Agung juga menghadirkan tantangan bagi pendaki berpengalaman dengan pemandangan spektakuler dari puncaknya. Baik untuk pemula maupun pendaki berpengalaman, Bali memiliki jalur hiking yang penuh keindahan alam.</p>
-            </div>
-            <img src="/img/stand/adventur.jpg" alt="Adventure Image">
-            <div class="text-content2">
-                <h2>Snorkeling</h2>
-                <p>Snorkeling di Bali menyuguhkan panorama bawah laut yang spektakuler, dengan spot terkenal seperti Nusa Penida, Amed, dan Pulau Menjangan. Di sini, snorkeler dapat menikmati keindahan terumbu karang, beragam ikan tropis, hingga penyu dan pari manta. Dengan air yang jernih dan kehidupan laut yang melimpah, snorkeling di Bali menjadi pilihan ideal untuk petualangan laut yang tak terlupakan.</p>
-                <a href="#" class="learn-more">Temukan Lebih Banyak -></a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Explore Section -->
-<div class="explore-section">
-    <h1>Eksplore Bali</h1>
-    <div class="card-container">
-        <a href="pantai.html" class="card">
-            <img src="/img/stand/pantai.jpg" alt="Pantai">
-            <div class="card-text">
-                <h2>Pantai</h2>
-            </div>
-        </a>
-        <a href="gunung.html" class="card">
-            <img src="/img/stand/gunung.jpg" alt="Gunung">
-            <div class="card-text">
-                <h2>Gunung</h2>
-            </div>
-        </a>
-        <a href="pura.html" class="card">
-            <img src="/img/stand/Temple.jpg" alt="Pura">
-            <div class="card-text">
-                <h2>Pura</h2>
-            </div>
-        </a>
-    </div>
-</div>
-
-<!-- Footer -->
- <footer class="container-fluid">
-    <div class="row">
-        <div class="col-md-6">
-            <p>Copyright &copy; 2023 Bali Travel Agency</p>
-        </div>
-        <div class="col-md-6">
-            <ul class="footer-nav">
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Terms & Conditions</a></li>
-            </ul>
-        </div>
-    </div>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
-</html>
+</body></html>
