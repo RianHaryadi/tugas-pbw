@@ -1,0 +1,22 @@
+
+        /* Tailwind Custom Configuration (wajib diikutsertakan di bagian head) */
+        @layer base {
+            /* Custom Colors */
+            .bg-custom {
+                background-color: #6B8E23; /* Custom Green for background */
+            }
+
+            .text-custom {
+                color: #6B8E23; /* Custom Green for text color */
+            }
+
+            /* Custom Border Color */
+            .border-custom {
+                border-color: #6B8E23; /* Custom Green border */
+            }
+
+            /* Button custom rounded class */
+            .rounded-lg {
+                border-radius: 9999px; /* Full circle for button (rounded button) */
+            }
+        }

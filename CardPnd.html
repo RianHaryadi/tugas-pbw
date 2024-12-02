@@ -1,34 +1,28 @@
 <!DOCTYPE html>
-<html lang="id"><head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Pantai Nusa Dua - Wisata Pantai Bali</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
-    <link href="https://ai-public.creatie.ai/gen_page/tailwind-custom.css" rel="stylesheet"/>
-    <script src="https://cdn.tailwindcss.com/3.4.5?plugins=forms@0.5.7,typography@0.5.13,aspect-ratio@0.4.2,container-queries@0.1.1"></script>
-    <script src="https://ai-public.creatie.ai/gen_page/tailwind-config.min.js" data-color="#000000" data-border-radius="small"></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="CardPnd.css">
+    <title>Document</title>
 </head>
-<body class="bg-gray-50 font-sans">
-    <nav class="bg-white shadow">
-        <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
-                <div class="flex">
-                    <div class="flex-shrink-0 flex items-center">
-                        <img class="h-8 w-auto" src="https://ai-public.creatie.ai/gen_page/logo_placeholder.png" alt="Logo"/>
-                    </div>
-                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
-                        <a href="#" class="border-custom text-custom inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Beranda</a>
-                        <a href="#" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Destinasi</a>
-                        <a href="#" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Panduan</a>
-                        <a href="#" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Kontak</a>
-                    </div>
-                </div>
+<body>
+    <nav class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex items-center justify-end h-16">
+            <div class="hidden sm:block sm:ml-6">
+              <div class="flex space-x-8">
+                <a href="#home" class="text-gray-900 hover:text-gray-700">Home</a>
+                <a href="#about" class="text-gray-900 hover:text-gray-700">Arikel</a>
+                <a href="#services" class="text-gray-900 hover:text-gray-700">Galeri</a>
+              </div>
             </div>
+          </div>
         </div>
-    </nav>
+      </nav>
 
-    <main class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div class="mb-8">
             <nav class="flex" aria-label="Breadcrumb">
                 <ol class="flex items-center space-x-4">
@@ -196,59 +190,58 @@
                         <div class="relative h-64 rounded-lg overflow-hidden mb-4">
                             <img src="https://ai-public.creatie.ai/gen_page/map_placeholder_1280x720.png" alt="Map" class="absolute w-full h-full object-cover"/>
                         </div>
-                        <button class="w-full bg-custom text-white py-2 px-4 rounded-lg !rounded-button flex items-center justify-center">
+                        <button class="w-full bg-black text-white py-2 px-4 rounded-lg flex items-center justify-center mb-4">
                             <i class="fas fa-location-arrow mr-2"></i>
                             Petunjuk Lokasi
                         </button>
+                        
+                        <button class="w-full bg-white text-black py-2 px-4 rounded-lg border-2 border-gray-300 hover:border-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-500 flex items-center justify-center">
+                            <i class="fas fa-location-arrow mr-2"></i>
+                            Bagikan Lokasi
+                        </button>                                     
                     </div>
                 </div>
             </div>
         </div>
     </main>
-
-    <footer class="bg-gray-900 text-white">
-        <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+    
+     <!--footer-->
+     <footer class="bg-black text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-4 gap-8">
                 <div>
-                    <img src="https://ai-public.creatie.ai/gen_page/logo_placeholder.png" alt="Logo" class="h-8 mb-4"/>
-                    <p class="text-gray-400 text-sm">Portal Informasi Pantai Destinasi Indonesia</p>
+                    <p class="text-sm opacity-80">Temukan keindahan dan keajaiban Pulau Dewata bersama kami.</p>
                 </div>
                 <div>
-                    <h4 class="text-lg font-medium mb-4">Destinasi</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="#" class="hover:text-white">Pantai</a></li>
-                        <li><a href="#" class="hover:text-white">Pulau</a></li>
-                        <li><a href="#" class="hover:text-white">Kuliner</a></li>
+                    <h4 class="font-semibold mb-4">Tautan</h4>
+                    <ul class="space-y-2 text-sm opacity-80">
+                        <li><a href="#" class="hover:opacity-100">Tentang Kami</a></li>
+                        <li><a href="#" class="hover:opacity-100">Layanan</a></li>
+                        <li><a href="#" class="hover:opacity-100">Destinasi</a></li>
+                        <li><a href="#" class="hover:opacity-100">Kontak</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="text-lg font-medium mb-4">Informasi</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="#" class="hover:text-white">Tentang Kami</a></li>
-                        <li><a href="#" class="hover:text-white">Kontak</a></li>
-                        <li><a href="#" class="hover:text-white">Kebijakan Privasi</a></li>
+                    <h4 class="font-semibold mb-4">Kontak</h4>
+                    <ul class="space-y-2 text-sm opacity-80">
+                        <li><i class="fas fa-phone mr-2"></i> +62 361 123456</li>
+                        <li><i class="fas fa-envelope mr-2"></i> info@balitour.com</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i> Jl. Sunset Road No. 88, Kuta, Bali</li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="text-lg font-medium mb-4">Ikuti Kami</h4>
+                    <h4 class="font-semibold mb-4">Media Sosial</h4>
                     <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-white">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white">
-                            <i class="fab fa-instagram"></i>
-                        </a>
+                        <a href="#" class="hover:opacity-80"><i class="fab fa-facebook-f text-xl"></i></a>
+                        <a href="#" class="hover:opacity-80"><i class="fab fa-instagram text-xl"></i></a>
+                        <a href="#" class="hover:opacity-80"><i class="fab fa-twitter text-xl"></i></a>
                     </div>
                 </div>
             </div>
-            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400 text-sm">
-                © 2024 Wisata Bali. All rights reserved.
+            <div class="border-t border-white border-opacity-20 mt-8 pt-8 text-center text-sm opacity-80">
+                <p>© 2024 Bali Tour. Hak Cipta Dilindungi.</p>
             </div>
         </div>
-    </footer>
-
-
-</body></html>
+        </footer>
+</body>
+</html>

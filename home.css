@@ -1,0 +1,41 @@
+/* Gaya untuk gambar tanpa border */
+img {
+  border: none;
+}
+/* Tentang Bali Section */
+section.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+section.bg-gray-50 {
+  background-color: #f9fafb;
+}
+
+section.bg-gray-50 .max-w-7xl {
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+section.bg-gray-50 .space-y-6 {
+  margin-bottom: 1.5rem;
+}
+
+section.bg-gray-50 h2 {
+  font-size: 2.5rem;
+  font-family: 'Prata', serif;
+  color: #2d3748;
+}
+
+section.bg-gray-50 p {
+  color: #4a5568;
+  line-height: 1.75;
+}
+
+section.bg-gray-50 .button {
+  background-color: #000;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+}

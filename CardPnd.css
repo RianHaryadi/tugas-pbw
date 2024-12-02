@@ -1,0 +1,49 @@
+
+  /* Custom Colors */
+  .text-custom {
+    color: #007BFF; /* Anda bisa mengganti dengan warna kustom yang Anda inginkan */
+  }
+
+  .bg-custom {
+    background-color: #007BFF; /* Anda bisa mengganti dengan warna kustom yang Anda inginkan */
+  }
+
+  /* Custom Font Family (optional) */
+  .font-custom {
+    font-family: 'Arial', sans-serif; /* Atau font lain sesuai preferensi */
+  }
+
+  /* Tailwind Utility Classes for Specific Effects */
+  .rounded-lg {
+    border-radius: 10px !important; /* Menetapkan border-radius yang lebih besar */
+  }
+
+  .text-custom-light {
+    color: rgba(0, 123, 255, 0.6); /* Light custom color */
+  }
+
+  .bg-custom-light {
+    background-color: rgba(0, 123, 255, 0.1); /* Light background custom color */
+  }
+
+  /* Custom Shadows */
+  .custom-shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  }
+
+  .custom-shadow-hover:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  }
+
+  /* Responsive Design */
+  .lg\\:col-span-2 {
+    @media (min-width: 1024px) {
+      grid-column: span 2 / span 2;
+    }
+  }
+
+  .lg\\:col-span-1 {
+    @media (min-width: 1024px) {
+      grid-column: span 1 / span 1;
+    }
+  }

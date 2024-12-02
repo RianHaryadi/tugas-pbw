@@ -1,0 +1,306 @@
+/* Navbar Styling */
+nav.bg-white {
+    background-color: #fff;
+}
+
+nav.bg-white.shadow-md {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: #1f2937;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #4b5563;
+}
+
+/* Hero Image Section */
+main.pt-16 {
+    padding-top: 4rem;
+}
+
+.relative img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.absolute.inset-0 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.bg-gradient-to-t {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+}
+
+.max-w-8xl {
+    max-width: 1920px;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-4xl {
+    font-size: 2.25rem;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+.text-lg {
+    font-size: 1.125rem;
+}
+
+.max-w-2xl {
+    max-width: 42rem;
+}
+
+/* Kategori Populer Section */
+section.py-16.bg-white {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+section .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+}
+
+@media (min-width: 640px) {
+    section .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    section .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.group {
+    position: relative;
+    display: block;
+    border-radius: 0.375rem;
+    overflow: hidden;
+}
+
+.group:hover .transform {
+    transform: scale(1.05);
+}
+
+.group .relative img {
+    width: 100%;
+    height: 16rem;
+    object-fit: cover;
+}
+
+.group .absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+}
+
+.group .absolute .bottom-0 {
+    position: absolute;
+    bottom: 0;
+    padding: 1.5rem;
+}
+
+
+.text-xl {
+    font-size: 1.25rem;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+/* Artikel Terbaru Section */
+section.py-16.bg-gray-50 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: #f9fafb;
+}
+
+section .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+}
+
+@media (min-width: 640px) {
+    section .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    section .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.shadow-sm {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.rounded-lg {
+    border-radius: 0.5rem;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.p-6 {
+    padding: 1.5rem;
+}
+
+h3.text-xl {
+    font-size: 1.25rem;
+}
+
+h3.font-bold {
+    font-weight: 700;
+}
+
+.text-gray-500 {
+    color: #6b7280;
+}
+
+.mb-2 {
+    margin-bottom: 0.5rem;
+}
+
+.text-gray-600 {
+    color: #4b5563;
+}
+
+.text-custom {
+    color: #0d9488;
+}
+
+.text-custom:hover {
+    color: #0f766e;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.text-sm {
+    font-size: 0.875rem;
+}
+
+.text-gray-500 {
+    color: #6b7280;
+}
+
+/* Footer */
+footer.bg-black {
+    background-color: #000;
+}
+
+footer.text-white {
+    color: #fff;
+}
+
+footer.py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+footer .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+}
+
+@media (min-width: 640px) {
+    footer .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    footer .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+footer .space-y-2 {
+    margin-bottom: 0.5rem;
+}
+
+footer .space-x-4 {
+    margin-right: 1rem;
+    display: flex;
+}
+
+footer .space-x-4 a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.25rem;
+}
+
+footer .space-x-4 a:hover {
+    opacity: 1;
+}
+
+footer .border-t {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+footer .text-sm {
+    font-size: 0.875rem;
+}
+
+footer .opacity-80 {
+    opacity: 0.8;
+}
+
+/* Social Icons */
+.fab {
+    font-family: 'Font Awesome 5 Brands';
+}
+
+.fas {
+    font-family: 'Font Awesome 5 Free';
+}
+
+/* Utility Classes */
+.hover\:opacity-100:hover {
+    opacity: 1 !important;
+}
+
+.hover\:text-custom\:90:hover {
+    color: rgba(13, 148, 136, 0.9);
+}
