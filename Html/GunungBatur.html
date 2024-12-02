@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/b2e4e7ba14.js" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQSVFZcYq8OVKwOPV7NOwjUSxs_FEJhtw&callback=initMap" async defer></script>
+    <script src="/JS/GngBatur.js"></script>
+    
+    <link rel="stylesheet" href="/Css/GunungBatur.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex items-center justify-end h-16">
+            <div class="hidden sm:block sm:ml-6">
+              <div class="flex space-x-8">
+                <a href="Home.html" class="text-gray-900 hover:text-gray-700">Home</a>
+                <a href="Artikel.html" class="text-gray-900 hover:text-gray-700">Arikel</a>
+                <a href="#services" class="text-gray-900 hover:text-gray-700">Galeri</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <main class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="mb-8">
+            <nav class="flex" aria-label="Breadcrumb">
+                <ol class="flex items-center space-x-4">
+                    <li>
+                        <a href="/Html/Home.html" class="text-gray-400 hover:text-gray-500">Beranda</a>
+                    </li>
+                    <li>
+                        <div class="flex items-center">
+                            <i class="fas fa-chevron-right text-gray-400 text-sm mx-2"></i>
+                            <a href="/Html/DestinationGunung.html" class="text-gray-400 hover:text-gray-500">Gunung</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex items-center">
+                            <i class="fas fa-chevron-right text-gray-400 text-sm mx-2"></i>
+                            <span class="text-gray-700">Gunung Batur</span>
+                        </div>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+
+        <div class="relative h-[480px] rounded-lg overflow-hidden mb-12">
+            <img src="/img/stand/Gunung/GunungBatur2.jpg" alt="Gunung Batur" class="w-full h-full object-cover"/>
+            <div class="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/60 to-transparent">
+                <h1 class="text-4xl font-bold text-white mb-2">Gunung Batur</h1>
+                <p class="text-white/80"><i class="fas fa-map-marker-alt mr-2"></i>Bali, Indonesia</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+            <div class="lg:col-span-2">
+                <section class="mb-12">
+                    <h2 class="text-2xl font-semibold mb-4">Tentang Gunung Batur</h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        Gunung Batur adalah gunung berapi aktif yang terletak di pulau Bali, Indonesia, tepatnya di daerah Kintamani, Kabupaten Bangli. Gunung ini memiliki ketinggian sekitar 1.717 meter di atas permukaan laut. Batur terkenal dengan pemandangannya yang indah, terutama saat matahari terbit,
+                        dan sering menjadi tujuan pendakian wisatawan. Selain itu, danau Batur yang berada di kawah gunung ini juga menjadi daya tarik wisata, 
+                        dengan pemandangan alam yang mempesona. Gunung Batur meletus terakhir kali pada tahun 2000, meskipun aktivitas vulkaniknya tidak terlalu besar.
+                    </p>
+                </section>
+
+                <section class="mb-12">
+                    <h2 class="text-2xl font-semibold mb-6">Aktivitas yang Tersedia</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+                            <i class="fa-solid fa-person-hiking text-custom text-2xl mb-4"></i>
+                            <h3 class="font-medium mb-2">Pendakian</h3>
+                            <p class="text-gray-500 text-sm">Pendakian untuk menyaksikan matahari terbit (sunrise)</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+                            <i class="fas fa-water text-custom text-2xl mb-4"></i>
+                            <h3 class="font-medium mb-2">Hot spring bath</h3>
+                            <p class="text-gray-500 text-sm">Setelah mendaki, banyak wisatawan yang menikmati berendam di pemandian air panas yang terletak di sekitar Danau Batur.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+                            <i class="fa-solid fa-camera-retro text-custom text-2xl mb-4"></i>
+                            <h3 class="font-medium mb-2">Fotografi Alam</h3>
+                            <p class="text-gray-500 text-sm">Pemandangan dari puncak Gunung Batur, serta keindahan Danau Batur dan sekitarnya.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mb-12">
+                    <h2 class="text-2xl font-semibold mb-6">Galeri Foto</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                        <img src="/img/stand/Gunung Batur/Gunung batur1.jpg" alt="Aktivitas Air" class="rounded-lg w-full h-64 object-cover"/>
+                        <img src="/img/stand/Gunung Batur/Gunung batur2.jpg" alt="Sunset" class="rounded-lg w-full h-64 object-cover"/>
+                        <img src="/img/stand/Gunung Batur/Gunung batur3.jpg" alt="Resort" class="rounded-lg w-full h-64 object-cover"/>
+                    </div>
+                </section>
+
+                <section class="mb-12">
+                    <h2 class="text-2xl font-semibold mb-6">Rekomendasi Hotel</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+                        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                            <!--Hotel Pertama-->
+                            <a href="https://www.traveloka.com/id-id/hotel/detail?spec=03-12-2024.04-12-2024.1.1.HOTEL.3000020010987.Munduk%20Moding%20Plantation%20Nature%20Resort%20%26%20Spa.2&contexts=%7B%22inventoryRateKey%22%3A%22HWFnyvL8K33gVLF%2FYqw0w%2BGG0%2Bsav%2BLaZAU2aZnthoGRiwCMzI3QmjaRuizVnHIUPFWVyO%2FGLtDt08bEMflN7hK015wwrjHyV5ioV5qR1%2B29ZQVkNFK1waqgYAztS7YUlKwfKdj0oTPESU1B%2FVdE%2FmwnzJYfJ1cAL59KoPdS3K3QMsJgIhWXer71tENTVUOwvq4TgfDxH2O84v%2FAZdEO38teDZB3gz4kd%2BPZRhFzu%2FQPRJP5P9dnlURpHUzpSj8A2jl0ebTcghpFJ7eZ7UEVx0fSaAX0rmYAGMvbrocU9vDaOXR5tNyCGkUnt5ntQRXH6FC6imJRZnG7Tzw%2FDYGW%2FUSFukCs%2BZNvox8a4rV8019ngblrAm4RfHj1lhbinFQ0TqdEeDhZDjztNuKSo%2BcSAOOKNUaZlud%2B%2BnQBZMyt0AU6%2BmDcpp05OfImCmgcBXrvCCkAbK1OTQ6Kt7vLQg5%2FEeB4gO9wSS8w5O%2Bn0i8T6qOlafzmKZJ%2FavkoQcApCwUcnFOZ%2FngTV085oCblCVZyUI98pDr0%2F3tyDAoGUmQ1H8Pr5Fo1LXre2qF1KIVCNZ1WXxqoMEdgKQHsNi4BjCuILB1hKOzq4iKwniBYx4U0dCOBtbp%2B%2F5lG0lMiWhGFrX%2F1G55KkpZSw9RBLZ%2FAJ6qpfTbJMdMzCxySIcUPzSDPwNhORaHxOhh4J4LzeS1iZWMrgASAjN6AbgHKVTVlKLHJBVrggfUDVNh93B1nJAx3wzC9ubyfP7g3Z4BHg87NLTXF6%2FxnXwWRCV7iSHgixL9AWm%2Bx7S9jyIHg1Bxf6nSO%2BUFpHHZfYD4pql6xIW6%2FpcNywqKC8N03YKl9krPnmE3AhPuFyXn5sxIbV9VlSDR%2F1uUGAeZllGl8exlwrj5Cd8BWsvELpVk9%2BRh5ES6ahy3kLXwqtyB%2FQfmTS7GjKvXPvhB6G%2FeaWhKxjN%2FSMjoqunMpEB0X3Y0WnKTrAu%2FAEN1SAuCVI71aPfmzZQ%2FWTcEzblGOTZB39fSNsFJyshSVLMqnlxuLOKq%2Bzf81wDyOdGGVEwjyKpRYD8ARJKAbUCsGqaWObizbLGw4Y%2FzyM2iuL1Li%22%7D&loginPromo=1&prevSearchId=1817333686835638897">
+                            <img src="/img/stand/Rekomendasi Hotel/Hotel Batur1.jpg" alt="Munduk Moding Plantation Nature Resort & Spa" class="w-full h-48 object-cover"/>
+                            <div class="p-4">
+                                <h3 class="font-medium text-lg mb-2">Munduk Moding Plantation Nature Resort & Spa</h3>
+                                <p class="text-gray-600 text-sm mb-3">Jl. Asah Gobleg, Gobleg, Kec. Banjar, Kabupaten Buleleng, Bali 81152</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-star text-yellow-400"></i>
+                                        <span class="ml-1 text-sm text-gray-600">4.8</span>
+                                    </div>
+                                    <span class="text-custom font-medium">Mulai Rp 3.000.000</span>
+                                </div>
+                            </a>
+                            </div>
+                        </div>
+                        <!--Hotel Kedua-->
+                        <a href="https://www.traveloka.com/id-id/hotel/detail?spec=23-12-2024.24-12-2024.1.1.HOTEL.3000010040849.Lakeview%20Hotel%20%26%20Restaurant%20Kintamani.2">
+                        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                            <img src="/img/stand/Rekomendasi Hotel/Hotel Batur2.jpg" alt="Lakeview Hotel & Restaurant" class="w-full h-48 object-cover"/>
+                            <div class="p-4">
+                                <h3 class="font-medium text-lg mb-2">Mulia Resort</h3>
+                                <p class="text-gray-600 text-sm mb-3">Jl. Raya Penelokan, Kedisan, Kec. Kintamani, Kabupaten Bangli, Bali 80652</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-star text-yellow-400"></i>
+                                        <span class="ml-1 text-sm text-gray-600">4.0</span>
+                                    </div>
+                                    <span class="text-custom font-medium">Mulai Rp 1.000.000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!--Hotel KeTiga -->
+                    <a href="https://www.traveloka.com/id-id/hotel/detail?spec=03-12-2024.11-12-2024.8.1.HOTEL.9000003312581.Villa%20Kedisan%20Lake%20View%20Kintamani.1">
+                        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                            <img src="/img/stand/Rekomendasi Hotel/Hotel Batur3.jpg" alt="Villa Kedisan Lake View Kintamani" class="w-full h-48 object-cover"/>
+                            <div class="p-4">
+                                <h3 class="font-medium text-lg mb-2">Villa Kedisan Lake View Kintamani</h3>
+                                <p class="text-gray-600 text-sm mb-3">Jl. Kedisan No.88, Kedisan, Kec. Kintamani, Kabupaten Bangli, Bali 80652</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-star text-yellow-400"></i>
+                                        <span class="ml-1 text-sm text-gray-600">3.0</span>
+                                    </div>
+                                    <span class="text-custom font-medium">Mulai Rp 1.000.000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!--Hotel Keempat-->
+                    <a href="https://www.traveloka.com/id-id/hotel/indonesia/alila-villas-uluwatu-148738?id=13415717992795365863&adloc=id-id&kw=alila%20villas%20uluwatu&gmt=e&gn=g&gd=c&gdm=&gcid=710342474633&gdp=&gdt=&gap=&pc=1&cp=ID_HO_SM_AU_AL_Google+-+HO+-+Search-ID/id+-+H+-+DOM+-+ID_Bali_ALL-ALL+|+QueryType:Hotel,AT:Hotel,CID:100003,RID:102746_Alila+Villas+Uluwatu+|+HO:DOM+-+ID_Bali_Badung-X,HID:148738,MT:Exact&aid=163549093862&wid=kwd-12828363322&fid=&gid=9125048&utm_id=KDiVWWYo&ad_id=710342474633&target_id=kwd-12828363322&click_id=CjwKCAiA0rW6BhAcEiwAQH28IvaFHkppM55tvvfnwZyzFXMi7eAGSdr6GTn8TYNfCSiRB6gJzpWJABoCo78QAvD_BwE&group_id=163549093862&gad_source=1&gclid=CjwKCAiA0rW6BhAcEiwAQH28IvaFHkppM55tvvfnwZyzFXMi7eAGSdr6GTn8TYNfCSiRB6gJzpWJABoCo78QAvD_BwE">
+                        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                            <img src="/img/stand/Rekomendasi Hotel/Hotel batur4.jpeg" alt="Alila Villas Uluwatu" class="w-full h-48 object-cover"/>
+                            <div class="p-4">
+                                <h3 class="font-medium text-lg mb-2">Alila Villas Uluwatu</h3>
+                                <p class="text-gray-600 text-sm mb-3">l. Belimbing Sari, Banjar Tambiyak, Pecatu, Uluwatu, Kabupaten Badung, Bali 80361</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-star text-yellow-400"></i>
+                                        <span class="ml-1 text-sm text-gray-600">5.0</span>
+                                    </div>
+                                    <span class="text-custom font-medium">Mulai Rp 12.000.000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </section>
+
+                <section class="mb-12">
+                    <h2 class="text-2xl font-semibold mb-6">Gunung Lain yang Mungkin Anda Suka</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                            <img src="/img/stand/Gunung/GunungAgung2.jpg" alt="Gunung Agung" class="w-full h-48 object-cover"/>
+                            <div class="p-4">
+                                <h3 class="font-medium">Gunung Agung</h3>
+                                <p class="text-sm text-gray-500">Karangasem, Bali Timur</p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                            <img src="/img/stand/Gunung/Gunung Batukaru2.jpg" alt="Gunung Batukaru" class="w-full h-48 object-cover"/>
+                            <div class="p-4">
+                                <h3 class="font-medium">Gunung Batukaru</h3>
+                                <p class="text-sm text-gray-500">Tabanan, Bali Barat</p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                            <img src="/img/stand/Gunung/Gunung abang.jpg" alt="Gunung Abang" class="w-full h-48 object-cover"/>
+                            <div class="p-4">
+                                <h3 class="font-medium">Gunung Abang</h3>
+                                <p class="text-sm text-gray-500">Kintamani, Bali Tengah</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>                
+            </div>
+
+            <div class="lg:col-span-1">
+                <div class="sticky top-8">
+                    <div class="bg-white rounded-lg shadow-sm p-6 mb-6">
+                        <div class="bg-white rounded-lg shadow-sm p-6">
+                            <h3 class="text-lg font-medium mb-4">Informasi Praktis</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start">
+                                    <i class="fas fa-clock text-custom mt-1"></i>
+                                    <div class="ml-4">
+                                        <h4 class="font-medium">Jam Operasional</h4>
+                                        <p class="text-sm text-gray-600">04:00 - 10:00 WITA (Waktu Indonesia Tengah) setiap hari</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-ticket-alt text-custom mt-1"></i>
+                                    <div class="ml-4">
+                                        <h4 class="font-medium">Tiket Masuk</h4>
+                                        <p class="text-sm text-gray-600">Rp 100.000 - Rp 150.000 per orang (tergantung paket)</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-car text-custom mt-1"></i>
+                                    <div class="ml-4">
+                                        <h4 class="font-medium">Parkir</h4>
+                                        <p class="text-sm text-gray-600">Tersedia di area parkir bawah, dengan biaya parkir sekitar Rp 20.000 - Rp 30.000 per kendaraan</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-hiking text-custom mt-1"></i>
+                                    <div class="ml-4">
+                                        <h4 class="font-medium">Pemandu Wisata</h4>
+                                        <p class="text-sm text-gray-600">Disarankan untuk menggunakan pemandu lokal. Biaya pemandu sekitar Rp 300.000 - Rp 500.000 per grup.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-cloud-sun text-custom mt-1"></i>
+                                    <div class="ml-4">
+                                        <h4 class="font-medium">Cuaca</h4>
+                                        <p class="text-sm text-gray-600">Cuaca di puncak bisa sangat dingin, suhu mencapai 10°C hingga 15°C. Bawalah jaket dan perlengkapan yang sesuai.</p>
+                                    </div>
+                                </div>
+                    <div class="bg-white rounded-lg shadow-sm p-6 mb-6">
+                        <h3 class="text-lg font-medium mb-4">Lokasi</h3>
+                        <div class="map-container">
+                            <!-- Google Maps Embed -->
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15794.511207514804!2d115.36719464414901!3d-8.240129618687039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd1f403c8e8ee3f%3A0xd38045afa18670b4!2sGn.%20Batur!5e0!3m2!1sid!2sid!4v1733149744089!5m2!1sid!2sid"
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    
+                        <a href="https://maps.app.goo.gl/6zBKYHmmBt3Jkzm67" target="_blank">
+                            <button class="button button--black mb-4">
+                                <i class="fas fa-location-arrow mr-2"></i>
+                                Petunjuk Lokasi
+                            </button>
+                        </a>
+                    
+                        <button class="button button--white">
+                            <i class="fa-solid fa-share mr-2"></i>
+                            Bagikan Lokasi
+                        </button>
+                    </div>                        
+    </main>
+    
+     <!--footer-->
+     <footer class="bg-black text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-4 gap-8">
+                <div>
+                    <p class="text-sm opacity-80">Temukan keindahan dan keajaiban Pulau Dewata bersama kami.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Tautan</h4>
+                    <ul class="space-y-2 text-sm opacity-80">
+                        <li><a href="#" class="hover:opacity-100">Tentang Kami</a></li>
+                        <li><a href="#" class="hover:opacity-100">Layanan</a></li>
+                        <li><a href="#" class="hover:opacity-100">Destinasi</a></li>
+                        <li><a href="#" class="hover:opacity-100">Kontak</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Kontak</h4>
+                    <ul class="space-y-2 text-sm opacity-80">
+                        <li><i class="fas fa-phone mr-2"></i> +62 361 123456</li>
+                        <li><i class="fas fa-envelope mr-2"></i> info@balitour.com</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i> Jl. Sunset Road No. 88, Kuta, Bali</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Media Sosial</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:opacity-80"><i class="fab fa-facebook-f text-xl"></i></a>
+                        <a href="#" class="hover:opacity-80"><i class="fab fa-instagram text-xl"></i></a>
+                        <a href="#" class="hover:opacity-80"><i class="fab fa-twitter text-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-white border-opacity-20 mt-8 pt-8 text-center text-sm opacity-80">
+                <p>© 2024 Bali Tour. Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+        </footer>
+</body>
+</html>
