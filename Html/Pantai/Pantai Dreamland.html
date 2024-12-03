@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/b2e4e7ba14.js" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQSVFZcYq8OVKwOPV7NOwjUSxs_FEJhtw&callback=initMap" async defer></script>
+    <script src="/JS/GngBatur.js"></script>
+    <link rel="stylesheet" href="/Css/Gunung/GunungBatur.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex items-center justify-end h-16">
+            <div class="hidden sm:block sm:ml-6">
+              <div class="flex space-x-8">
+                <a href="Home.html" class="text-gray-900 hover:text-gray-700">Home</a>
+                <a href="Artikel.html" class="text-gray-900 hover:text-gray-700">Arikel</a>
+                <a href="#services" class="text-gray-900 hover:text-gray-700">Galeri</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <main class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="mb-8">
+            <nav class="flex" aria-label="Breadcrumb">
+                <ol class="flex items-center space-x-4">
+                    <li>
+                        <a href="/Html/Home.html" class="text-gray-400 hover:text-gray-500">Beranda</a>
+                    </li>
+                    <li>
+                        <div class="flex items-center">
+                            <i class="fas fa-chevron-right text-gray-400 text-sm mx-2"></i>
+                            <a href="/Html/Pantai/DestinationPantai.html" class="text-gray-400 hover:text-gray-500"> Pantai</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex items-center">
+                            <i class="fas fa-chevron-right text-gray-400 text-sm mx-2"></i>
+                            <span class="text-gray-700"> Pantai Dreamland</span>
+                        </div>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+
+        <div class="relative h-[480px] rounded-lg overflow-hidden mb-12">
+            <img src="/Img/stand/Pantai/Pantai Dreamland5.jpg" alt="Pantai Dreamland" class="w-full h-full object-cover"/>
+            <div class="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/60 to-transparent">
+                <h1 class="text-4xl font-bold text-white mb-2">Pantai Dreamland</h1>
+                <p class="text-white/80"><i class="fas fa-map-marker-alt mr-2"></i>Bali, Indonesia</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+            <div class="lg:col-span-2">
+                <section class="mb-12">
+                    <h2 class="text-2xl font-semibold mb-4">Tentang Pantai Dreamland</h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        Pantai Dreamland adalah salah satu pantai yang paling terkenal dan menawan di Bali Barat, tepatnya di wilayah Pecatu, yang terletak di selatan pulau. Pantai ini dikenal dengan pasir putihnya yang halus, ombak yang cukup besar, dan panorama alam yang memukau, menjadikannya destinasi ideal bagi wisatawan yang mencari ketenangan atau aktivitas air yang seru.</p>
+                        <p class="text-gray-600 leading-relaxed">Dreamland adalah pantai yang relatif masih alami, dikelilingi oleh tebing-tebing karang yang tinggi dan menawarkan pemandangan laut yang spektakuler. Pantai ini sangat populer di kalangan wisatawan lokal dan mancanegara, terutama bagi mereka yang ingin menghindari keramaian pantai utama seperti Kuta dan Nusa Dua.</p>
+                        <p class="text-gray-600 leading-relaxed">Pantai Dreamland juga dikenal dengan ombak besar yang sangat cocok untuk para peselancar. Selain itu, pantai ini memiliki suasana yang lebih santai dan lebih sedikit keramaian dibandingkan dengan pantai-pantai lainnya di Bali.</p>
+                    
+                </section>
+
+                <section class="mb-12">
+                    <h2 class="text-2xl font-semibold mb-6">Aktivitas yang Tersedia</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+                            <i class="fa-solid fa-person-swimming text-custom text-2xl mb-4"></i>
+                            <h3 class="font-medium mb-2">Berenang</h3>
+                            <p class="text-gray-500 text-sm">Air yang jernih dan tenang</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+                            <i class="fas fa-water text-custom text-2xl mb-4"></i>
+                            <h3 class="font-medium mb-2">Snorkeling</h3>
+                            <p class="text-gray-500 text-sm">Melihat keindahan bawah laut.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+                            <i class="fa-solid fa-umbrella-beach text-custom text-2xl mb-4"></i>
+                            <h3 class="font-medium mb-2">Berjemur</h3>
+                            <p class="text-gray-500 text-sm">Pantai dengan pasir putih.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mb-12">
+                    <h2 class="text-2xl font-semibold mb-6">Galeri Foto</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                        <img src="/Img/stand/Pantai/Pantai Dreamland2.jpg" alt="-" class="rounded-lg w-full h-64 object-cover"/>
+                        <img src="/Img/stand/Pantai/Pantai Dreamland3.jpg" alt="-" class="rounded-lg w-full h-64 object-cover"/>
+                        <img src="/Img/stand/Pantai/Pantai Dreamland4.jpg" alt="-" class="rounded-lg w-full h-64 object-cover"/>
+                    </div>
+                </section>
+
+                <section class="mb-12">
+                    <h2 class="text-2xl font-semibold mb-6">Rekomendasi Hotel</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+                        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                            <!--Hotel Pertama-->
+                            <a href="https://www.traveloka.com/id-id/hotel/detail?spec=05-12-2024.06-12-2024.1.1.HOTEL.1000000547589.Hidden%20Hills%20Villas.1 "target="_blank">
+                            <img src="/Img/stand/Rekomendasi Hotel Pantai/Hidden Hills Villas.jpeg" alt="Hidden Hills Villas" class="w-full h-48 object-cover"/>
+                            <div class="p-4">
+                                <h3 class="font-medium text-lg mb-2">Hidden Hills Villas</h3>
+                                <p class="text-gray-600 text-sm mb-3"> Jalan Labuansait, Pecatu, Uluwatu.</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-star text-yellow-400"></i>
+                                        <span class="ml-1 text-sm text-gray-600">5.0</span>
+                                    </div>
+                                    <span class="text-custom font-medium">Mulai Rp 3.000.000</span>
+                                </div>
+                            </a>
+                            </div>
+                        </div>
+                        <!--Hotel Kedua-->
+                        <a href="https://www.traveloka.com/id-id/hotel/detail?spec=11-12-2024.12-12-2024.1.1.HOTEL.255129.Anantara%20Bali%20Uluwatu%20Resort.1"target="_blank">
+                        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                            <img src="/Img/stand/Rekomendasi Hotel Pantai/Anantara Uluwatu Bali Resort.jpeg" alt="Anantara Uluwatu Bali Resort" class="w-full h-48 object-cover"/>
+                            <div class="p-4">
+                                <h3 class="font-medium text-lg mb-2">Anantara Uluwatu Bali Resort</h3>
+                                <p class="text-gray-600 text-sm mb-3">Jalan Belimbing Sari, Pecatu, Uluwatu</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-star text-yellow-400"></i>
+                                        <span class="ml-1 text-sm text-gray-600">5.0</span>
+                                    </div>
+                                    <span class="text-custom font-medium">Mulai Rp 5.000.000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!--Hotel KeTiga -->
+                    <a href="https://www.traveloka.com/id-id/hotel/detail?spec=10-12-2024.11-12-2024.1.1.HOTEL.9000000973594.Suluban%20Cliff%20Bali%20Villa.1"target="_blank">
+                        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                            <img src="/Img/stand/Rekomendasi Hotel Pantai/Suluban Cliff Bali.jpeg" alt="Suluban Cliff Bali " class="w-full h-48 object-cover"/>
+                            <div class="p-4">
+                                <h3 class="font-medium text-lg mb-2">Suluban Cliff Bali</h3>
+                                <p class="text-gray-600 text-sm mb-3"> Suluban Beach, Pecatu, Uluwatu.</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-star text-yellow-400"></i>
+                                        <span class="ml-1 text-sm text-gray-600">4.0</span>
+                                    </div>
+                                    <span class="text-custom font-medium">Mulai Rp 15.000.000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!--Hotel Keempat-->
+                    <a href="https://www.traveloka.com/id-id/hotel/indonesia/the-edge-bali---chse-certified-239727"target="_blank">
+                        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                            <img src="/Img/stand/Rekomendasi Hotel Pantai/The Edge Bali.jpg" alt="The Edge Bali" class="w-full h-48 object-cover"/>
+                            <div class="p-4">
+                                <h3 class="font-medium text-lg mb-2">The Edge Bali</h3>
+                                <p class="text-gray-600 text-sm mb-3">Jalan Pura Goa Lempeh, Uluwatu.</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-star text-yellow-400"></i>
+                                        <span class="ml-1 text-sm text-gray-600">5.0</span>
+                                    </div>
+                                    <span class="text-custom font-medium">Mulai Rp 13.000.000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </section>
+
+                <section class="mb-12">
+                    <h2 class="text-2xl font-semibold mb-6">Pantai Lain yang Mungkin Anda Suka</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                            <img src="/Img/stand/Pantai/Pantai Dreamland.jpg" alt="Pantai Dreamland" class="w-full h-48 object-cover"/>
+                            <div class="p-4">
+                                <h3 class="font-medium">Pantai Dreamland</h3>
+                                <p class="text-sm text-gray-500">Pecatu, Bali Selatan</p> 
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                            <img src="/Img/stand/Pantai/Pantai Padang Padang.jpg" alt="Pantai Padang Padang" class="w-full h-48 object-cover"/>
+                            <div class="p-4">
+                                <h3 class="font-medium">Pantai Padang Padang</h3>
+                                <p class="text-sm text-gray-500">Pecatu, Bali Selatan</p> 
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                            <img src="/Img/stand/Pantai/Pantai Nusa Dua2.jpg" alt="Pantai Nusa Dua" class="w-full h-48 object-cover"/>
+                            <div class="p-4">
+                                <h3 class="font-medium">Pantai Nusa Dua</h3>
+                                <p class="text-sm text-gray-500">Kuta Selatan, Bali</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>                
+            </div>
+
+            <div class="lg:col-span-1">
+                <div class="sticky top-8">
+                    <div class="bg-white rounded-lg shadow-sm p-6 mb-6">
+                        <div class="bg-white rounded-lg shadow-sm p-6">
+                            <h3 class="text-lg font-medium mb-4">Informasi Praktis</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start">
+                                    <i class="fas fa-clock text-custom mt-1"></i>
+                                    <div class="ml-4">
+                                        <h4 class="font-medium">Jam Operasional</h4>
+                                        <p class="text-sm text-gray-600">Pantai Dreamland dapat dikunjungi 24 jam setiap hari. Namun, aktivitas utama seperti restoran tepi pantai dan olahraga air biasanya beroperasi antara 10:00 - 18:00 WITA. 
+                                            Disarankan untuk mengunjungi pantai pada pagi atau sore hari untuk menikmati suasana yang lebih tenang dan pemandangan yang indah.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-ticket-alt text-custom mt-1"></i>
+                                    <div class="ml-4">
+                                        <h4 class="font-medium">Tiket Masuk</h4>
+                                        <p class="text-sm text-gray-600">Akses ke Pantai Dreamland gratis untuk pengunjung. Anda dapat menikmati pantai yang luas dan indah tanpa biaya masuk. Namun, 
+                                            untuk menikmati beberapa aktivitas seperti surfing, parasailing, atau menyewa tempat berjemur, mungkin ada biaya tambahan.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-car text-custom mt-1"></i>
+                                    <div class="ml-4">
+                                        <h4 class="font-medium">Parkir</h4>
+                                        <p class="text-sm text-gray-600">Tersedia area parkir di sekitar Pantai Dreamland dengan tarif sekitar Rp 10.000 - Rp 20.000 per kendaraan. 
+                                            Tempat parkir cukup luas dan nyaman, terutama bagi pengunjung yang membawa kendaraan pribadi.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-hiking text-custom mt-1"></i>
+                                    <div class="ml-4">
+                                        <h4 class="font-medium">Pemandu Wisata</h4>
+                                        <p class="text-sm text-gray-600">Untuk menikmati aktivitas seperti surfing atau mengetahui lebih banyak tentang sejarah dan budaya lokal, Anda bisa menggunakan jasa pemandu wisata lokal. Biaya pemandu berkisar antara Rp 300.000 - Rp 500.000 per grup, 
+                                            tergantung pada jenis paket atau aktivitas yang diambil.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-cloud-sun text-custom mt-1"></i>
+                                    <div class="ml-2">
+                                        <h4 class="font-medium">Cuaca</h4>
+                                        <p class="text-sm text-gray-600">
+                                            Pantai Dreamland memiliki cuaca tropis sepanjang tahun dengan suhu rata-rata 27°C - 32°C. Musim kemarau (Mei - Oktober) menawarkan cuaca cerah dan panas, sangat cocok untuk berjemur atau bermain air. Di musim hujan (November - April), 
+                                            hujan ringan kadang terjadi di sore hari, namun tidak mengganggu banyak aktivitas pantai, terutama di pagi dan siang hari.
+                                        </p>
+                                    </div>
+                                </div>
+                    <div class="bg-white rounded-lg shadow-sm p-6 mb-6">
+                        <h3 class="text-lg font-medium mb-4">Lokasi</h3>
+                        <div class="map-container">
+                            <!-- Google Maps Embed -->
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7886.228000244111!2d115.15759716196482!3d-8.775344194016176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd244f35b8a5d05%3A0xd42d4da6a44aa938!2sPantai%20Jimbaran!5e0!3m2!1sid!2sid!4v1733243407979!5m2!1sid!2sid" 
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    
+                        <a href="https://maps.app.goo.gl/8J1BzQRpe8Bb4aqo6" target="_blank">
+                            <button class="button button--black mb-4">
+                                <i class="fas fa-location-arrow mr-2"></i>
+                                Petunjuk Lokasi
+                            </button>
+                        </a>
+                    
+                        <button class="button button--white">
+                            <i class="fa-solid fa-share mr-2"></i>
+                            Bagikan Lokasi
+                        </button>
+                    </div>                        
+    </main>
+    
+     <!--footer-->
+     <footer class="bg-black text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-4 gap-8">
+                <div>
+                    <p class="text-sm opacity-80">Temukan keindahan dan keajaiban Pulau Dewata bersama kami.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Tautan</h4>
+                    <ul class="space-y-2 text-sm opacity-80">
+                        <li><a href="#" class="hover:opacity-100">Tentang Kami</a></li>
+                        <li><a href="#" class="hover:opacity-100">Layanan</a></li>
+                        <li><a href="#" class="hover:opacity-100">Destinasi</a></li>
+                        <li><a href="#" class="hover:opacity-100">Kontak</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Kontak</h4>
+                    <ul class="space-y-2 text-sm opacity-80">
+                        <li><i class="fas fa-phone mr-2"></i> +62 361 123456</li>
+                        <li><i class="fas fa-envelope mr-2"></i> info@balitour.com</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i> Jl. Sunset Road No. 88, Kuta, Bali</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Media Sosial</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:opacity-80"><i class="fab fa-facebook-f text-xl"></i></a>
+                        <a href="#" class="hover:opacity-80"><i class="fab fa-instagram text-xl"></i></a>
+                        <a href="#" class="hover:opacity-80"><i class="fab fa-twitter text-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-white border-opacity-20 mt-8 pt-8 text-center text-sm opacity-80">
+                <p>© 2024 Bali Tour. Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+        </footer>
+</body>
+</html>
