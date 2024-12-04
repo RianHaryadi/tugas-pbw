@@ -6,7 +6,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/b2e4e7ba14.js" crossorigin="anonymous"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQSVFZcYq8OVKwOPV7NOwjUSxs_FEJhtw&callback=initMap" async defer></script>
-    <script src="/JS/GngBatur.js"></script>
+    <script src="/JS/Pantai.Js"></script>
     <link rel="stylesheet" href="/Css/Gunung/GunungBatur.css">
     <title>Document</title>
 </head>
@@ -170,6 +170,102 @@
                     </a>
                 </section>
 
+                <!--Section kegiatan-->
+                <div class="flex justify-center items-center mb-16">
+                    <div class="inline-flex rounded-lg border border-gray-200 p-1 bg-white space-x-1">
+                        <button id="tab1" onclick="activateTab('tab1')" class="px-4 py-2 rounded bg-black text-white">Aktivitas Air Seru</button>
+                        <button id="tab2" onclick="activateTab('tab2')" class="px-4 py-2 rounded bg-white text-gray-800 border">Relaksasi & Keluarga</button>
+                        <button id="tab3" onclick="activateTab('tab3')" class="px-4 py-2 rounded bg-white text-gray-800 border">Beach Club</button>
+                    </div>
+                </div>
+                
+                <!-- Tab Content -->
+                <div id="content-tab1" class="tab-content">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+                        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                            <!--Jetski-->
+                            <img src="/Img/stand/Kegitan/Jetski.jpg" alt="Jet Ski" class="w-full h-48 object-cover"/>
+                            <div class="p-4">
+                                <h3 class="font-medium text-lg mb-2">Jetski</h3>
+                                <p class="text-gray-600 text-sm mb-3">Nikmati sensasi jet ski di perairan jernih Pantai Nusa Dua. Aktivitas ini sangat cocok bagi 
+                                    Anda yang suka dengan petualangan dan ingin merasakan kecepatan di atas air.</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <span class="text-custom font-medium">Rp.250.000-500.000</span>
+                                    </div>
+                                    <a href="https://www.instagram.com/p/C075kMYB2ay/"><button id="ButtonPesan" class="px-4 py-2 rounded bg-black text-white">Pesan</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                            <img src="/Img/stand/Kegitan/Parasailing.jpg" alt="Parasailing" class="w-full h-48 object-cover"/>
+                            <div class="p-4">
+                                <h3 class="font-medium text-lg mb-2">Parasailing</h3>
+                                <p class="text-gray-600 text-sm mb-3">Terbang tinggi di atas laut dengan parasailing dan nikmati pemandangan spektakuler 
+                                    dari ketinggian. Aktivitas ini memberikan pengalaman seru dan pemandangan luar biasa.</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <span class="text-custom font-medium">Rp.350.000-700.000</span>
+                                    </div>
+                                    <a href="https://www.instagram.com/p/C076F3GhGEI/"><button id="ButtonPesan" class="px-4 py-2 rounded bg-black text-white">Pesan</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                            <img src="/Img/stand/Kegitan/Diving.jpg" alt="Diving" class="w-full h-48 object-cover"/>
+                            <div class="p-4">
+                                <h3 class="font-medium text-lg mb-2">Diving</h3>
+                                <p class="text-gray-600 text-sm mb-3">Diving memberikan pengalaman seru menjelajahi dunia bawah laut, melihat terumbu karang dan kehidupan laut yang memukau. Dengan peralatan selam lengkap, 
+                                    Anda bisa menyelam lebih dalam dan menikmati keindahan alam bawah laut yang jarang terlihat.</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <span class="text-custom font-medium">Rp.450.000-900.000</span>
+                                    </div>
+                                    <a href="https://www.instagram.com/p/C08ApQFRlun/"><button id="ButtonPesan" class="px-4 py-2 rounded bg-black text-white">Pesan</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                            <img src="/Img/stand/Kegitan/Banana boat.jpg" alt="Banana Boat" class="w-full h-48 object-cover"/>
+                            <div class="p-4">
+                                <h3 class="font-medium text-lg mb-2">Banana Boat</h3>
+                                <p class="text-gray-600 text-sm mb-3">Banana Boat menawarkan sensasi seru meluncur di atas air sambil duduk di atas perahu berbentuk pisang yang ditarik oleh speedboat. Rasakan kegembiraan saat perahu berputar dan bergoyang, 
+                                    membuat momen ini semakin menyenangkan bersama teman-teman atau keluarga.</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <span class="text-custom font-medium">Rp.150.000-300.000</span>
+                                    </div>
+                                    <a href="https://www.instagram.com/p/C076z2oB57W/"><button id="ButtonPesan" class="px-4 py-2 rounded bg-black text-white">Pesan</button></a>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                </div>
+                <div id="content-tab2" class="tab-content" style="display: none;">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+                        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                            <!--Jetski-->
+                            <img src="/Img/stand/Kegitan/Jetski.jpg" alt="Jet Ski" class="w-full h-48 object-cover"/>
+                            <div class="p-4">
+                                <h3 class="font-medium text-lg mb-2">Jetski</h3>
+                                <p class="text-gray-600 text-sm mb-3">Nikmati sensasi jet ski di perairan jernih Pantai Nusa Dua. Aktivitas ini sangat cocok bagi 
+                                    Anda yang suka dengan petualangan dan ingin merasakan kecepatan di atas air.</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <span class="text-custom font-medium">Rp.250.000-500.000</span>
+                                    </div>
+                                    <a href="https://www.instagram.com/p/C075kMYB2ay/"><button id="ButtonPesan" class="px-4 py-2 rounded bg-black text-white">Pesan</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                </div>
+                <div id="content-tab3" class="tab-content" style="display: none;">
+                    <h2>Beach Club</h2>
+                    <p>Content for Beach Club...</p>
+                </div>                             
+                </section>
+
                 <section class="mb-12">
                     <h2 class="text-2xl font-semibold mb-6">Pantai Lain yang Mungkin Anda Suka</h2>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -256,13 +352,13 @@
                         </div>
                     
                         <a href="https://maps.app.goo.gl/vWSetrb6cBF2pER86" target="_blank">
-                            <button class="button button--black mb-4">
+                            <button id="locationButton" class="button button--black mb-4">
                                 <i class="fas fa-location-arrow mr-2"></i>
                                 Petunjuk Lokasi
                             </button>
                         </a>
                     
-                        <button class="button button--white">
+                        <button class="button button--white shareLocation">
                             <i class="fa-solid fa-share mr-2"></i>
                             Bagikan Lokasi
                         </button>
