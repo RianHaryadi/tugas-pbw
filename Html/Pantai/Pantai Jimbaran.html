@@ -6,7 +6,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/b2e4e7ba14.js" crossorigin="anonymous"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQSVFZcYq8OVKwOPV7NOwjUSxs_FEJhtw&callback=initMap" async defer></script>
-    <script src="/JS/GngBatur.js"></script>
+    <script src="/JS/Pantai.Js"></script>
     <link rel="stylesheet" href="/Css/Gunung/GunungBatur.css">
     <title>Document</title>
 </head>
@@ -16,8 +16,8 @@
           <div class="flex items-center justify-end h-16">
             <div class="hidden sm:block sm:ml-6">
               <div class="flex space-x-8">
-                <a href="Home.html" class="text-gray-900 hover:text-gray-700">Home</a>
-                <a href="Artikel.html" class="text-gray-900 hover:text-gray-700">Arikel</a>
+                <a href="/Html/Home.html" class="text-gray-900 hover:text-gray-700">Home</a>
+                <a href="/Html/Artikel.html" class="text-gray-900 hover:text-gray-700">Arikel</a>
                 <a href="#services" class="text-gray-900 hover:text-gray-700">Galeri</a>
               </div>
             </div>
@@ -168,6 +168,179 @@
                         </div>
                     </a>
                 </section>
+                <h2 class="text-2xl font-semibold mb-6">Rekomendasi Kegiatan</h2>
+                <div class="flex justify-center items-center mb-16">
+                    <div class="inline-flex rounded-lg border border-gray-200 p-1 bg-white space-x-1">
+                        <button id="tab1" onclick="activateTab('tab1')" class="px-4 py-2 rounded bg-black text-white">Aktivitas Air Seru</button>
+                        <button id="tab2" onclick="activateTab('tab2')" class="px-4 py-2 rounded bg-white text-gray-800 border">Relaksasi & Keluarga</button>
+                        <button id="tab3" onclick="activateTab('tab3')" class="px-4 py-2 rounded bg-white text-gray-800 border">Beach Club</button>
+                    </div>
+                </div>
+                
+                <!-- Tab Content -->
+                <div id="content-tab1" class="tab-content">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+                        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                            <!--Jetski-->
+                            <img src="/Img/stand/Kegitan/Jetski.jpg" alt="Jet Ski" class="w-full h-48 object-cover"/>
+                            <div class="p-4">
+                                <h3 class="font-medium text-lg mb-2">Jetski</h3>
+                                <p class="text-gray-600 text-sm mb-3">Nikmati sensasi jet ski di perairan jernih Pantai Nusa Dua. Aktivitas ini sangat cocok bagi 
+                                    Anda yang suka dengan petualangan dan ingin merasakan kecepatan di atas air.</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <span class="text-custom font-medium">Rp.250.000-500.000</span>
+                                    </div>
+                                    <a href="https://www.instagram.com/p/C075kMYB2ay/"><button id="ButtonPesan" class="px-4 py-2 rounded bg-black text-white">Pesan</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                            <img src="/Img/stand/Kegitan/Parasailing.jpg" alt="Parasailing" class="w-full h-48 object-cover"/>
+                            <div class="p-4">
+                                <h3 class="font-medium text-lg mb-2">Parasailing</h3>
+                                <p class="text-gray-600 text-sm mb-3">Terbang tinggi di atas laut dengan parasailing dan nikmati pemandangan spektakuler 
+                                    dari ketinggian. Aktivitas ini memberikan pengalaman seru dan pemandangan luar biasa.</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <span class="text-custom font-medium">Rp.350.000-700.000</span>
+                                    </div>
+                                    <a href="https://www.instagram.com/p/C076F3GhGEI/"><button id="ButtonPesan" class="px-4 py-2 rounded bg-black text-white">Pesan</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                            <img src="/Img/stand/Kegitan/Diving.jpg" alt="Diving" class="w-full h-48 object-cover"/>
+                            <div class="p-4">
+                                <h3 class="font-medium text-lg mb-2">Diving</h3>
+                                <p class="text-gray-600 text-sm mb-3">Diving memberikan pengalaman seru menjelajahi dunia bawah laut, melihat terumbu karang dan kehidupan laut yang memukau. Dengan peralatan selam lengkap, 
+                                    Anda bisa menyelam lebih dalam dan menikmati keindahan alam bawah laut yang jarang terlihat.</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <span class="text-custom font-medium">Rp.450.000-900.000</span>
+                                    </div>
+                                    <a href="https://www.instagram.com/p/C08ApQFRlun/"><button id="ButtonPesan" class="px-4 py-2 rounded bg-black text-white">Pesan</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                            <img src="/Img/stand/Kegitan/Banana boat.jpg" alt="Banana Boat" class="w-full h-48 object-cover"/>
+                            <div class="p-4">
+                                <h3 class="font-medium text-lg mb-2">Banana Boat</h3>
+                                <p class="text-gray-600 text-sm mb-3">Banana Boat menawarkan sensasi seru meluncur di atas air sambil duduk di atas perahu berbentuk pisang yang ditarik oleh speedboat. Rasakan kegembiraan saat perahu berputar dan bergoyang, 
+                                    membuat momen ini semakin menyenangkan bersama teman-teman atau keluarga.</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <span class="text-custom font-medium">Rp.150.000-300.000</span>
+                                    </div>
+                                    <a href="https://www.instagram.com/p/C076z2oB57W/"><button id="ButtonPesan" class="px-4 py-2 rounded bg-black text-white">Pesan</button></a>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                </div>
+                
+                <!--Kegitan Keluarga-->
+                <div id="content-tab2" class="tab-content" style="display: none;">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+                        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                            <!--Jetski-->
+                            <img src="/Img/stand/Kegitan/Spa The Westin Resort Nusa Dua.jpeg" alt="Spa The Westin Resort Nusa Dua" class="w-full h-48 object-cover"/>
+                            <div class="p-4">
+                                <h3 class="font-medium text-lg mb-2">Spa The Westin Resort Nusa Dua</h3>
+                                <p class="text-gray-600 text-sm mb-3">Setelah seharian beraktivitas di pantai, relaksasi dengan pijat tradisional Bali di salah satu resor mewah di Nusa Dua.</p>
+                                <div class="flex items-center justify-between">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                            <img src="/Img/stand/Kegitan/Sunset Dinner di Tepi Pantai.jpg" alt="Parasailing" class="w-full h-48 object-cover"/>
+                            <div class="p-4">
+                                <h3 class="font-medium text-lg mb-2">Sunset Dinner di Tepi Pantai</h3>
+                                <p class="text-gray-600 text-sm mb-3">Nikmati makan malam di restoran tepi pantai dengan pemandangan matahari terbenam yang menakjubkan. 
+                                    Banyak restoran di Nusa Dua menawarkan pengalaman makan malam dengan hiburan tradisional Bali.
+                                </p>
+                                <div class="flex items-center justify-between">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                            <img src="/Img/stand/Kegitan/Museum Pasifika.jpg" alt="Berkunjung ke Museum Pasifika" class="w-full h-48 object-cover"/>
+                            <div class="p-4">
+                                <h3 class="font-medium text-lg mb-2">Berkunjung ke Museum Pasifika</h3>
+                                <p class="text-gray-600 text-sm mb-3">Kunjungi Museum Pasifika di Nusa Dua untuk melihat koleksi seni Indonesia dan Asia Pasifik yang menarik. 
+                                    Ini bisa menjadi kegiatan yang mendidik dan menginspirasi keluarga.</p>
+                                <div class="flex items-center justify-between">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                            <img src="/Img/stand/Kegitan/Berkeliling dengan Perahu untuk Menyaksikan Sunset.jpg" alt="Berkeliling dengan Perahu untuk Menyaksikan Sunset" class="w-full h-48 object-cover"/>
+                            <div class="p-4">
+                                <h3 class="font-medium text-lg mb-2">Berkeliling dengan Perahu untuk Menyaksikan Sunset</h3>
+                                <p class="text-gray-600 text-sm mb-3">Banana Boat menawarkan sensasi seru meluncur di atas air sambil duduk di atas perahu berbentuk pisang yang ditarik oleh speedboat. Rasakan kegembiraan saat perahu berputar dan bergoyang, 
+                                    membuat momen ini semakin menyenangkan bersama teman-teman atau keluarga.</p>
+                                <div class="flex items-center justify-between">
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                </div>
+
+                <div id="content-tab3" class="tab-content" style="display: none;">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+                        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                            <!--Jetski-->
+                            <img src="/Img/stand/Kegitan/Sundays Beach Club.jpg" alt="Sundays Beach Club" class="w-full h-48 object-cover"/>
+                            <div class="p-4">
+                                <h3 class="font-medium text-lg mb-2">Sundays Beach Club</h3>
+                                <p class="text-gray-600 text-sm mb-3">Terletak di tepi pantai yang indah, Sundays Beach Club menawarkan akses langsung ke pantai pasir putih dengan air jernih. Anda bisa menikmati berbagai olahraga air, 
+                                    berjemur di bawah sinar matahari, atau bersantai di area lounge yang nyaman.</p>
+                                <div class="flex items-center justify-between">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                            <img src="/Img/stand/Kegitan/Karma Beach Club.jpg" alt="Karma Beach Club" class="w-full h-48 object-cover"/>
+                            <div class="p-4">
+                                <h3 class="font-medium text-lg mb-2">Karma Beach Club</h3>
+                                <p class="text-gray-600 text-sm mb-3">Karma Beach Club adalah tempat yang sempurna untuk menikmati suasana pantai Bali yang santai. Dengan fasilitas mewah dan berbagai olahraga air, 
+                                    Karma Beach Club menawarkan pengalaman pantai yang menyenangkan dengan akses ke pantai pribadi.
+                                </p>
+                                <div class="flex items-center justify-between">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                            <img src="/Img/stand/Kegitan/Club Med Bali.jpg" alt="Club Med Bali" class="w-full h-48 object-cover"/>
+                            <div class="p-4">
+                                <h3 class="font-medium text-lg mb-2">Club Med Bali</h3>
+                                <p class="text-gray-600 text-sm mb-3">Club Med Bali menawarkan suasana pantai yang menyenangkan dengan berbagai aktivitas rekreasi untuk keluarga. 
+                                    Beach club di sini memberikan akses langsung ke pantai yang indah, dengan berbagai fasilitas untuk beristirahat atau beraktivitas.</p>
+                                <div class="flex items-center justify-between">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                            <img src="/Img/stand/Kegitan/La Laguna Bali.jpg" alt="La Laguna Bali" class="w-full h-48 object-cover"/>
+                            <div class="p-4">
+                                <h3 class="font-medium text-lg mb-2">La Laguna Bali</h3>
+                                <p class="text-gray-600 text-sm mb-3">terletak sedikit lebih jauh dari Nusa Dua, La Laguna Bali adalah beach club yang menawarkan suasana santai dengan dekorasi bohemian. Meskipun tidak terletak langsung di Nusa Dua, 
+                                    tempat ini tetap merupakan destinasi yang ideal untuk menikmati pantai dan makan siang.</p>
+                                <div class="flex items-center justify-between">
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                </div>
+
+                </section>
 
                 <section class="mb-12">
                     <h2 class="text-2xl font-semibold mb-6">Pantai Lain yang Mungkin Anda Suka</h2>
@@ -244,28 +417,28 @@
                                             hujan ringan sering terjadi di sore atau malam hari, namun tidak mengganggu banyak aktivitas, terutama di pagi dan siang hari.</p>
                                     </div>
                                 </div>
-                    <div class="bg-white rounded-lg shadow-sm p-6 mb-6">
-                        <h3 class="text-lg font-medium mb-4">Lokasi</h3>
-                        <div class="map-container">
-                            <!-- Google Maps Embed -->
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7886.228000244111!2d115.15759716196482!3d-8.775344194016176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd244f35b8a5d05%3A0xd42d4da6a44aa938!2sPantai%20Jimbaran!5e0!3m2!1sid!2sid!4v1733243407979!5m2!1sid!2sid" 
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                            </iframe>
-                        </div>
-                    
-                        <a href="https://maps.app.goo.gl/8J1BzQRpe8Bb4aqo6" target="_blank">
-                            <button class="button button--black mb-4">
-                                <i class="fas fa-location-arrow mr-2"></i>
-                                Petunjuk Lokasi
-                            </button>
-                        </a>
-                    
-                        <button class="button button--white">
-                            <i class="fa-solid fa-share mr-2"></i>
-                            Bagikan Lokasi
-                        </button>
-                    </div>                        
-    </main>
+                                <div class="bg-white rounded-lg shadow-sm p-6 mb-6">
+                                    <h3 class="text-lg font-medium mb-4">Lokasi</h3>
+                                    <div class="map-container">
+                                        <!-- Google Maps Embed -->
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15772.467734465074!2d115.15474319425158!3d-8.775068060422152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd244f35b8a5d05%3A0xd42d4da6a44aa938!2sPantai%20Jimbaran!5e0!3m2!1sid!2sid!4v1733457920202!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                            
+                                        </iframe>
+                                    </div>
+                                
+                                    <a href="https://maps.app.goo.gl/vMDKRQDN6GHEt4wa6" target="_blank">
+                                        <button id="locationButton" class="button button--black mb-4">
+                                            <i class="fas fa-location-arrow mr-2"></i>
+                                            Petunjuk Lokasi
+                                        </button>
+                                    </a>
+                                
+                                    <button class="button button--white shareLocation">
+                                        <i class="fa-solid fa-share mr-2"></i>
+                                        Bagikan Lokasi
+                                    </button>
+                                </div>                        
+                </main>
     
      <!--footer-->
      <footer class="bg-black text-white py-12">

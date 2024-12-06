@@ -28,10 +28,6 @@ function activateTab(tabId) {
 }
 
 // Optional: If you want to handle location button clicks via JS
-document.getElementById("locationButton").addEventListener("click", function(event) {
-    // Open the link in a new tab using JavaScript
-    window.open("https://maps.app.goo.gl/vWSetrb6cBF2pER86", "_blank");
-});
 
 // Prevent color change for the Pesan button when clicked
 const pesanButton = document.getElementById("ButtonPesan");
