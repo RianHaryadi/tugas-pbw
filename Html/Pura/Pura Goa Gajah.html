@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/b2e4e7ba14.js" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQSVFZcYq8OVKwOPV7NOwjUSxs_FEJhtw&callback=initMap" async defer></script>
+    <link rel="stylesheet" href="/Css/Gunung/GunungBatur.css">
+    <script src="/JS/GunungBatur.js"></script>
+    
+    <link rel="stylesheet" href="GunungBatur.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex items-center justify-end h-16">
+            <div class="hidden sm:block sm:ml-6">
+              <div class="flex space-x-8">
+                <a href="/Html/Home.html" class="text-gray-900 hover:text-gray-700">Home</a>
+                <a href="/Html/Artikel.html" class="text-gray-900 hover:text-gray-700">Arikel</a>
+                <a href="#services" class="text-gray-900 hover:text-gray-700">Galeri</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <main class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="mb-8">
+            <nav class="flex" aria-label="Breadcrumb">
+                <ol class="flex items-center space-x-4">
+                    <li>
+                        <a href="/Html/Pura/DestinationPura.html" class="text-gray-400 hover:text-gray-500">Beranda</a>
+                    </li>
+                    <li>
+                        <div class="flex items-center">
+                            <i class="fas fa-chevron-right text-gray-400 text-sm mx-2"></i>
+                            <a href="/Html/Pura/DestinationPura.html" class="text-gray-400 hover:text-gray-500">Pura</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex items-center">
+                            <i class="fas fa-chevron-right text-gray-400 text-sm mx-2"></i>
+                            <span class="text-gray-700">Pura Goa Gajah</span>
+                        </div>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+
+        <div class="relative h-[480px] rounded-lg overflow-hidden mb-12">
+            <img src="/Img/stand/Pura/Pura Goa Gajah.jpg" alt="Pura Besakih" class="w-full h-full object-cover"/>
+            <div class="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/60 to-transparent">
+                <h1 class="text-4xl font-bold text-white mb-2">Pura Goa Gajah</h1>
+                <p class="text-white/80"><i class="fas fa-map-marker-alt mr-2"></i>Bali, Indonesia</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+            <div class="lg:col-span-2">
+                <section class="mb-12">
+                    <h2 class="text-2xl font-semibold mb-4">Tentang Pura Goa Gajah</h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        Pura Goa Gajah, atau yang lebih dikenal sebagai Goa Gajah Temple, adalah salah satu situs bersejarah dan spiritual paling terkenal di Bali, Indonesia. Terletak di desa Bedulu, sekitar 6 km dari pusat Ubud, pura ini merupakan tempat yang sarat dengan nilai sejarah, budaya, dan spiritual. Goa Gajah terkenal dengan gua berbentuk wajah raksasa yang sangat unik, serta suasana yang tenang dan alami.
+                        Pura Goa Gajah berfungsi sebagai tempat pemujaan bagi umat Hindu Bali, tetapi juga memiliki nilai arkeologis dan spiritual yang sangat penting, dengan latar belakang yang mencakup unsur-unsur kepercayaan Hindu, Buddha, dan budaya Bali kuno.
+                    </p>
+                </section>
+
+                <section class="mb-12">
+                    <h2 class="text-2xl font-semibold mb-6">Aktivitas yang Tersedia</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+                            <i class="fa-solid fa-om text-custom text-2xl mb-4"></i>
+                            <h3 class="font-medium mb-2">Meditasi dan Penyucian Diri di Kolam Pemandian</h3>
+                            <p class="text-gray-500 text-sm">Pengunjung dapat melakukan ritual penyucian diri di kolam pemandian suci, merendam diri atau bermeditasi untuk mendapatkan ketenangan batin.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+                            <i class="fas fa-hiking text-custom text-2xl mb-4"></i>
+                            <h3 class="font-medium mb-2">Menelusuri Goa dan Menikmati Relief Batu</h3>
+                            <p class="text-gray-500 text-sm">Menjelajahi gua dengan mulut berbentuk wajah raksasa dan melihat relief batu yang menggambarkan kisah mitologi Hindu serta sejarah Bali.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+                            <i class="fa-solid fa-praying-hands text-custom text-2xl mb-4"></i>
+                            <h3 class="font-medium mb-2">Menyaksikan Upacara Adat Bali</h3>
+                            <p class="text-gray-500 text-sm">Pengunjung dapat menyaksikan atau berpartisipasi dalam upacara adat Bali, yang memperkenalkan tradisi dan kepercayaan spiritual masyarakat Bali.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mb-12">
+                    <h2 class="text-2xl font-semibold mb-6">Galeri Foto</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                        <img src="/Img/stand/Pura/Pura Goa Gajah2.jpg" alt="Aktivitas Air" class="rounded-lg w-full h-64 object-cover"/>
+                        <img src="/Img/stand/Pura/Pura Goa Gajah3.jpg" alt="Sunset" class="rounded-lg w-full h-64 object-cover"/>
+                        <img src="/Img/stand/Pura/Pura Goa Gajah4.jpg" alt="Resort" class="rounded-lg w-full h-64 object-cover"/>
+                    </div>
+                </section>
+
+                <section class="mb-12">
+                    <h2 class="text-2xl font-semibold mb-6">Rekomendasi Hotel</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+                        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                            <!--Hotel Pertama-->
+                            <a href="https://www.traveloka.com/id-id/hotel/detail?spec=07-12-2024.08-12-2024.1.1.HOTEL.71905.KajaNe%20Mua.1">
+                            <img src="/Img/stand/Rekomendasi Hotel Pura/KajaNe Mua.jpeg" alt="KajaNe Mua" class="w-full h-48 object-cover"/>
+                            <div class="p-4">
+                                <h3 class="font-medium text-lg mb-2">KajaNe Mua</h3>
+                                <p class="text-gray-600 text-sm mb-3">Jl. Monkey Forest No.20, Ubud, Kecamatan Ubud, Kabupaten Gianyar, Bali 80571</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-star text-yellow-400"></i>
+                                        <span class="ml-1 text-sm text-gray-600">4.6</span>
+                                    </div>
+                                    <span class="text-custom font-medium">Mulai Rp 2.100.000</span>
+                                </div>
+                            </a>
+                            </div>
+                        </div>
+                        <!--Hotel Kedua-->
+                        <a href="https://www.traveloka.com/en-id/hotel/detail?spec=07-12-2024.08-12-2024.1.1.HOTEL.426266.Alaya%20Resort%20Ubud.1">
+                        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                            <img src="/Img/stand/Rekomendasi Hotel Pura/Komaneka at Bisma.jpeg" alt="Alaya Resort Ubud" class="w-full h-48 object-cover"/>
+                            <div class="p-4">
+                                <h3 class="font-medium text-lg mb-2">Alaya Resort Ubud</h3>
+                                <p class="text-gray-600 text-sm mb-3">Jl. Hanoman, Ubud, Kec. Gianyar, Kabupaten Gianyar, Bali 80571</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-star text-yellow-400"></i>
+                                        <span class="ml-1 text-sm text-gray-600">4.6</span>
+                                    </div>
+                                    <span class="text-custom font-medium">Mulai Rp 2.100.000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!--Hotel KeTiga -->
+                    <a href="https://www.traveloka.com/id-id/hotel/detail?spec=07-12-2024.08-12-2024.1.1.HOTEL.3000020004743.Tanah%20Gajah%2C%20a%20Resort%20by%20Hadiprana.1">
+                        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                            <img src="/Img/stand/Rekomendasi Hotel Pura/Maya Ubud.jpeg" alt="Tanah Gajah, a Resort by Hadiprana" class="w-full h-48 object-cover"/>
+                            <div class="p-4">
+                                <h3 class="font-medium text-lg mb-2">Tanah Gajah, a Resort by Hadiprana</h3>
+                                <p class="text-gray-600 text-sm mb-3">Tengkulak Kaja, Jl. Raya Goa Gajah, Kemenuh, Ubud, Gianyar Regency, Bali 80571</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-star text-yellow-400"></i>
+                                        <span class="ml-1 text-sm text-gray-600">4.8</span>
+                                    </div>
+                                    <span class="text-custom font-medium">Mulai Rp 6.000.000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!--Hotel Keempat-->
+                    <a href="https://www.traveloka.com/en-id/hotel/detail?spec=07-12-2024.08-12-2024.1.1.HOTEL.540976.Bale%20Gede%20Luxury%20Villas.1">
+                        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                            <img src="/Img/stand/Rekomendasi Hotel Pura/Bale Gede Luxury Villas.jpg" alt="Bale Gede Luxury Villas" class="w-full h-48 object-cover"/>
+                            <div class="p-4">
+                                <h3 class="font-medium text-lg mb-2">Bale Gede Luxury Villas</h3>
+                                <p class="text-gray-600 text-sm mb-3">Jalan Raya Batu Belig Gang Bias Aud No. 1 Seminyak Kuta, Kerobokan Kelod, Kec. Kuta Utara, Kabupaten Badung, Bali 80361</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-star text-yellow-400"></i>
+                                        <span class="ml-1 text-sm text-gray-600">4.6</span>
+                                    </div>
+                                    <span class="text-custom font-medium">Mulai Rp 1.500.000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </section>
+
+                <section class="mb-12">
+                    <h2 class="text-2xl font-semibold mb-6">Pura Lain yang Mungkin Anda Suka</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                            <img src="/Img/stand/Pura/Pura Tanah Lot.jpg" alt="Pura Tanah Lot" class="w-full h-48 object-cover"/>
+                            <div class="p-4">
+                                <h3 class="font-medium">Pura Tanah Lot</h3>
+                                <p class="text-sm text-gray-500">Tabanan, Bali Barat</p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                            <img src="/Img/stand/Pura/Pura Samuan Tiga.jpg" alt="Pura Samuan Tiga" class="w-full h-48 object-cover"/>
+                            <div class="p-4">
+                                <h3 class="font-medium">Pura Samuan Tiga</h3>
+                                <p class="text-sm text-gray-500">Tabanan, Bali Barat</p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                            <img src="/Img/stand/Pura/Pura Goa Gajah.jpg" alt="Pura Goa Gajah" class="w-full h-48 object-cover"/>
+                            <div class="p-4">
+                                <h3 class="font-medium">Pura Goa Gajah</h3>
+                                <p class="text-sm text-gray-500">Gianyar, Bali Tengah</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>                              
+            </div>
+
+            <div class="lg:col-span-1">
+                <div class="sticky top-8">
+                    <div class="bg-white rounded-lg shadow-sm p-6 mb-6">
+                        <div class="bg-white rounded-lg shadow-sm p-6">
+                            <h3 class="text-lg font-medium mb-4">Informasi Praktis</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start">
+                                    <i class="fas fa-clock text-custom mt-1"></i>
+                                    <div class="ml-4">
+                                        <h4 class="font-medium">Jam Operasional</h4>
+                                        <p class="text-sm text-gray-600">Senin – Minggu: 08:00 - 17:00 WITA
+                                            Disarankan untuk mengunjungi pagi atau sore hari untuk menghindari keramaian dan menikmati suasana yang lebih tenang.</p>   
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-ticket-alt text-custom mt-1"></i>
+                                    <div class="ml-4">
+                                        <h4 class="font-medium">Tiket Masuk</h4>
+                                        <p class="text-sm text-gray-600">Tiket Masuk: Rp 30.000 per orang dewasa
+                                            Tiket ini memberi akses ke area utama pura dan kolam pemandian. Biaya tambahan berlaku jika menggunakan layanan pemandu wisata.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-ticket-alt text-custom mt-1"></i>
+                                    <div class="ml-4">
+                                        <h4 class="font-medium">Aturan Berpakaian</h4>
+                                        <p class="text-sm text-gray-600">Sarung dan Selendang: Pengunjung wajib mengenakan sarung dan selendang saat memasuki area pura. Sarung dan selendang dapat disewa di pintu masuk dengan biaya sekitar Rp 10.000 - Rp 20.000.</p>
+                                    <p class="text-sm text-gray-600">Pakaian Sopan: Harap mengenakan pakaian yang sopan dan menutupi bagian tubuh yang tidak seharusnya terbuka, seperti celana pendek atau kaos tanpa lengan.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-car text-custom mt-1"></i>
+                                    <div class="ml-4">
+                                        <h4 class="font-medium">Parkir dan Fasilitas</h4>
+                                        <p class="text-sm text-gray-600">Parkir Kendaraan: Rp 5.000 - Rp 20.000 per kendaraan (tergantung jenis kendaraan).</p>
+                                            <li class="text-sm text-gray-600">Warung makanan tradisional Bali.</li>
+                                            <li class="text-sm text-gray-600">Toilet umum yang terjaga kebersihannya.</li>
+                                            <li class="text-sm text-gray-600">Penjual suvenir dan kerajinan Bali.</li>
+                                            <li class="text-sm text-gray-600">Area istirahat yang nyaman di sekitar pura.</li>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-hiking text-custom mt-1"></i>
+                                    <div class="ml-4">
+                                        <h4 class="font-medium">Pemandu Wisata</h4>
+                                        <p class="text-sm text-gray-600">Disarankan menggunakan pemandu wisata lokal untuk mendapatkan pemahaman yang lebih dalam mengenai sejarah dan makna spiritual Pura Goa Gajah.
+                                            Biaya Pemandu Wisata: Rp 200.000 - Rp 400.000 per grup (tergantung durasi dan jumlah orang).</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-cloud-sun text-custom mt-1"></i>
+                                    <div class="ml-4">
+                                        <h4 class="font-medium">Daya Tarik Tambahan</h4>
+                                        <h3>Gua Berwajah Raksasa</h3>
+                                        <p class="text-sm text-gray-600">Menelusuri gua dengan mulut berbentuk wajah raksasa yang merupakan ikon utama pura ini.</p>
+                                        <h3>Kolam Pemandian Suci</h3>
+                                        <p class="text-sm text-gray-600">Menikmati ketenangan dengan merendam diri di kolam yang memiliki pancuran air suci.</p>
+                                        <h3>Relief Batu dan Patung</h3>
+                                        <p class="text-sm text-gray-600">Melihat relief batu yang menggambarkan kisah mitologi Hindu dan patung-patung dewa yang menambah keindahan pura.</p>
+                                        <h3>Upacara Adat Bali:</h3>
+                                        <p class="text-sm text-gray-600">Menyaksikan atau berpartisipasi dalam upacara adat Bali yang sering diadakan di pura ini.</p>
+                                    </div>
+                                </div>
+                    <div class="bg-white rounded-lg shadow-sm p-6 mb-6">
+                        <h3 class="text-lg font-medium mb-4">Lokasi</h3>
+                        <div class="map-container">
+                            <!-- Google Maps Embed -->
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1972.8696272873149!2d115.28625543858975!3d-8.524676547879473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd216319e3e8cbb%3A0xcf6f85fcf798a545!2sGoa%20Gajah!5e0!3m2!1sid!2sid!4v1733580098495!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    
+                        <a href="https://maps.app.goo.gl/KQyvAxBrgb1mXyJi8" target="_blank">
+                            <button class="button button--black mb-4">
+                                <i class="fas fa-location-arrow mr-2"></i>
+                                Petunjuk Lokasi
+                            </button>
+                        </a>
+                    
+                        <button class="button button--white">
+                            <i class="fa-solid fa-share mr-2"></i>
+                            Bagikan Lokasi
+                        </button>
+                    </div>                        
+    </main>
+    
+     <!--footer-->
+     <footer class="bg-black text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-4 gap-8">
+                <div>
+                    <p class="text-sm opacity-80">Temukan keindahan dan keajaiban Pulau Dewata bersama kami.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Tautan</h4>
+                    <ul class="space-y-2 text-sm opacity-80">
+                        <li><a href="#" class="hover:opacity-100">Tentang Kami</a></li>
+                        <li><a href="#" class="hover:opacity-100">Layanan</a></li>
+                        <li><a href="#" class="hover:opacity-100">Destinasi</a></li>
+                        <li><a href="#" class="hover:opacity-100">Kontak</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Kontak</h4>
+                    <ul class="space-y-2 text-sm opacity-80">
+                        <li><i class="fas fa-phone mr-2"></i> +62 361 123456</li>
+                        <li><i class="fas fa-envelope mr-2"></i> info@balitour.com</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i> Jl. Sunset Road No. 88, Kuta, Bali</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Media Sosial</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:opacity-80"><i class="fab fa-facebook-f text-xl"></i></a>
+                        <a href="#" class="hover:opacity-80"><i class="fab fa-instagram text-xl"></i></a>
+                        <a href="#" class="hover:opacity-80"><i class="fab fa-twitter text-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-white border-opacity-20 mt-8 pt-8 text-center text-sm opacity-80">
+                <p>© 2024 Bali Tour. Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+        </footer>
+</body>
+</html>

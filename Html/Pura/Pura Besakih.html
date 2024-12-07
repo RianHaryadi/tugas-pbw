@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/b2e4e7ba14.js" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQSVFZcYq8OVKwOPV7NOwjUSxs_FEJhtw&callback=initMap" async defer></script>
+    <link rel="stylesheet" href="/Css/Gunung/GunungBatur.css">
+    <script src="/JS/GunungBatur.js"></script>
+    
+    <link rel="stylesheet" href="GunungBatur.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex items-center justify-end h-16">
+            <div class="hidden sm:block sm:ml-6">
+              <div class="flex space-x-8">
+                <a href="Home.html" class="text-gray-900 hover:text-gray-700">Home</a>
+                <a href="Artikel.html" class="text-gray-900 hover:text-gray-700">Arikel</a>
+                <a href="#services" class="text-gray-900 hover:text-gray-700">Galeri</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <main class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="mb-8">
+            <nav class="flex" aria-label="Breadcrumb">
+                <ol class="flex items-center space-x-4">
+                    <li>
+                        <a href="Home.html" class="text-gray-400 hover:text-gray-500">Beranda</a>
+                    </li>
+                    <li>
+                        <div class="flex items-center">
+                            <i class="fas fa-chevron-right text-gray-400 text-sm mx-2"></i>
+                            <a href="/Html/Pura/DestinationPura.html" class="text-gray-400 hover:text-gray-500">Pura</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex items-center">
+                            <i class="fas fa-chevron-right text-gray-400 text-sm mx-2"></i>
+                            <span class="text-gray-700">Pura Besakih</span>
+                        </div>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+
+        <div class="relative h-[480px] rounded-lg overflow-hidden mb-12">
+            <img src="/Img/stand/Pura/Pura Besakih2.jpg" alt="Pura Besakih" class="w-full h-full object-cover"/>
+            <div class="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/60 to-transparent">
+                <h1 class="text-4xl font-bold text-white mb-2">Pura Besakih</h1>
+                <p class="text-white/80"><i class="fas fa-map-marker-alt mr-2"></i>Bali, Indonesia</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+            <div class="lg:col-span-2">
+                <section class="mb-12">
+                    <h2 class="text-2xl font-semibold mb-4">Tentang Pura Besakih</h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        Pura Besakih adalah pura terbesar dan paling suci di Bali, terletak di lereng Gunung Agung, gunung tertinggi di Bali. Pura ini sering disebut sebagai "Pura Ibu" (Mother Temple) karena dianggap sebagai pusat spiritual dan keagamaan bagi umat Hindu Bali. <br>
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">Pura Besakih terdiri dari kompleks pura yang sangat besar dengan lebih dari 80 bangunan, termasuk 18 pura utama, dan merupakan tempat yang sangat sakral untuk upacara dan persembahyangan. Pura ini dibangun dengan arsitektur yang menggabungkan simbolisme alam, seperti gunung yang dianggap sebagai tempat tinggal para dewa. <br>
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">Pura Besakih juga memiliki peran penting dalam tradisi Bali, karena menjadi tempat pertemuan berbagai aliran agama Hindu di Bali. Meskipun sangat ramai dikunjungi wisatawan, pura ini tetap mempertahankan nuansa spiritual yang mendalam. Setiap tahunnya, berbagai upacara besar, seperti Hari Raya Kuningan dan Nyepi, sering diadakan di sini.    
+                    </p>
+                </section>
+
+                <section class="mb-12">
+                    <h2 class="text-2xl font-semibold mb-6">Aktivitas yang Tersedia</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+                            <i class="fa-solid fa-bell text-custom text-2xl mb-4"></i>
+                            <h3 class="font-medium mb-2">Mengikuti Upacara Keagamaan</h3>
+                            <p class="text-gray-500 text-sm">Pengunjung sering mengikuti atau menyaksikan upacara besar seperti Hari Raya Kuningan dan Nyepi di pura ini.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+                            <i class="fas fa-praying-hands text-custom text-2xl mb-4"></i>
+                            <h3 class="font-medium mb-2">Berdoa dan Bersembahyang</h3>
+                            <p class="text-gray-500 text-sm">Banyak yang datang untuk berdoa dan melakukan persembahan, karena pura ini dianggap sangat sakral.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+                            <i class="fa-solid fa-camera-retro text-custom text-2xl mb-4"></i>
+                            <h3 class="font-medium mb-2">Fotografi Alam</h3>
+                            <p class="text-gray-500 text-sm">Pura Besakih menawarkan pemandangan indah Gunung Agung, banyak yang menikmati pemandangan dan berfoto di sini.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mb-12">
+                    <h2 class="text-2xl font-semibold mb-6">Galeri Foto</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                        <img src="/Img/stand/Pura/Pura Besakih3.jpg" alt="Aktivitas Air" class="rounded-lg w-full h-64 object-cover"/>
+                        <img src="/Img/stand/Pura/Pura Besakih4.jpg" alt="Sunset" class="rounded-lg w-full h-64 object-cover"/>
+                        <img src="/Img/stand/Pura/Pura Besakih5.jpg" alt="Resort" class="rounded-lg w-full h-64 object-cover"/>
+                    </div>
+                </section>
+
+                <section class="mb-12">
+                    <h2 class="text-2xl font-semibold mb-6">Rekomendasi Hotel</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+                        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                            <!--Hotel Pertama-->
+                            <a href="https://www.traveloka.com/id-id/hotel/detail?spec=07-12-2024.08-12-2024.1.1.HOTEL.501808.Puri%20Gangga%20Resort.1">
+                            <img src="/Img/stand/Rekomendasi Hotel Pura/Puri Gangga Resort.jpeg" alt="Puri Gangga Resort" class="w-full h-48 object-cover"/>
+                            <div class="p-4">
+                                <h3 class="font-medium text-lg mb-2">Puri Gangga Resort</h3>
+                                <p class="text-gray-600 text-sm mb-3">Sebatu, Kec. Tegallalang, Kabupaten Gianyar, Bali 80561</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-star text-yellow-400"></i>
+                                        <span class="ml-1 text-sm text-gray-600">4.0</span>
+                                    </div>
+                                    <span class="text-custom font-medium">Mulai Rp 1.300.000</span>
+                                </div>
+                            </a>
+                            </div>
+                        </div>
+                        <!--Hotel Kedua-->
+                        <a href="https://www.traveloka.com/id-id/hotel/detail?spec=11-12-2024.14-12-2024.3.1.HOTEL.245855.The%20Ayu%20Kintamani%20Villa%20at%20Toya%20Devasya.1">
+                        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                            <img src="/Img/stand/Rekomendasi Hotel Pura/The Ayu Kintamani Villa.jpeg" alt="The Ayu Kintamani Villa" class="w-full h-48 object-cover"/>
+                            <div class="p-4">
+                                <h3 class="font-medium text-lg mb-2">The Ayu Kintamani Villa</h3>
+                                <p class="text-gray-600 text-sm mb-3">Batur Tengah, Kec. Kintamani, Kabupaten Bangli, Bali</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-star text-yellow-400"></i>
+                                        <span class="ml-1 text-sm text-gray-600">4.1</span>
+                                    </div>
+                                    <span class="text-custom font-medium">Mulai Rp 1.300.000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!--Hotel KeTiga -->
+                    <a href="https://www.traveloka.com/id-id/hotel/detail?spec=11-12-2024.14-12-2024.3.1.HOTEL.3000010004416.Tirta%20Sari%20Bungalows.1">
+                        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                            <img src="/Img/stand/Rekomendasi Hotel Pura/Tirta Sari Bungalow.jpeg" alt="Tirtasari Bungalows" class="w-full h-48 object-cover"/>
+                            <div class="p-4">
+                                <h3 class="font-medium text-lg mb-2">Tirta Sari Bungalow</h3>
+                                <p class="text-gray-600 text-sm mb-3">Pemuteran, Kec. Gerokgak, Kabupaten Buleleng, Bali 81155</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-star text-yellow-400"></i>
+                                        <span class="ml-1 text-sm text-gray-600">4.7</span>
+                                    </div>
+                                    <span class="text-custom font-medium">Mulai Rp 1.000.000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!--Hotel Keempat-->
+                    <a href="https://www.traveloka.com/id-id/hotel/detail?spec=07-12-2024.08-12-2024.1.1.HOTEL.3000010001103.Pondok%20Sebatu%20Villa.1">
+                        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                            <img src="/Img/stand/Rekomendasi Hotel Pura/Pondok Sebatu Villa.jpeg" alt="Pondok Sebatu Villa" class="w-full h-48 object-cover"/>
+                            <div class="p-4">
+                                <h3 class="font-medium text-lg mb-2">Pondok Sebatu Villa</h3>
+                                <p class="text-gray-600 text-sm mb-3">Banjar Sebatu, Sebatu Village, Tegallalang, Kecamatan Tegalalang, Kabupaten Gianyar, Bali 80561</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-star text-yellow-400"></i>
+                                        <span class="ml-1 text-sm text-gray-600">4.4</span>
+                                    </div>
+                                    <span class="text-custom font-medium">Mulai Rp 2.200.000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </section>
+
+                <section class="mb-12">
+                    <h2 class="text-2xl font-semibold mb-6">Pura Lain yang Mungkin Anda Suka</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                            <img src="/Img/stand/Pura/Pura Tanah Lot.jpg" alt="Pura Tanah Lot" class="w-full h-48 object-cover"/>
+                            <div class="p-4">
+                                <h3 class="font-medium">Pura Tanah Lot</h3>
+                                <p class="text-sm text-gray-500">Tabanan, Bali Barat</p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                            <img src="/Img/stand/Pura/Pura Samuan Tiga.jpg" alt="Pura Samuan Tiga" class="w-full h-48 object-cover"/>
+                            <div class="p-4">
+                                <h3 class="font-medium">Pura Samuan Tiga</h3>
+                                <p class="text-sm text-gray-500">Tabanan, Bali Barat</p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                            <img src="/Img/stand/Pura/Pura Goa Gajah.jpg" alt="Pura Goa Gajah" class="w-full h-48 object-cover"/>
+                            <div class="p-4">
+                                <h3 class="font-medium">Pura Goa Gajah</h3>
+                                <p class="text-sm text-gray-500">Gianyar, Bali Tengah</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>                              
+            </div>
+
+            <div class="lg:col-span-1">
+                <div class="sticky top-8">
+                    <div class="bg-white rounded-lg shadow-sm p-6 mb-6">
+                        <div class="bg-white rounded-lg shadow-sm p-6">
+                            <h3 class="text-lg font-medium mb-4">Informasi Praktis</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start">
+                                    <i class="fas fa-clock text-custom mt-1"></i>
+                                    <div class="ml-4">
+                                        <h4 class="font-medium">Jam Operasional</h4>
+                                        <p class="text-sm text-gray-600">Senin – Minggu: 08:00 - 18:00 WITA
+                                            Pastikan untuk tiba lebih awal jika Anda ingin menikmati keindahan pura dengan lebih tenang, terutama karena pura ini sering dipadati pengunjung selama puncak jam wisata.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-ticket-alt text-custom mt-1"></i>
+                                    <div class="ml-4">
+                                        <h4 class="font-medium">Tiket Masuk</h4>
+                                        <p class="text-sm text-gray-600">Tiket Masuk: Rp 80.000 per orang dewasa
+                                            Tiket ini mencakup akses ke area utama pura, namun Anda mungkin perlu membayar tambahan jika ingin memasuki bagian tertentu yang lebih terpencil atau membutuhkan jasa pemandu.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-ticket-alt text-custom mt-1"></i>
+                                    <div class="ml-4">
+                                        <h4 class="font-medium">Aturan Berpakaian</h4>
+                                        <li class="text-sm text-gray-600">Sarung dan Selendang: Pengunjung diwajibkan untuk mengenakan sarung dan selendang saat memasuki area pura. Sarung dan selendang biasanya tersedia untuk disewa di pintu masuk dengan biaya sekitar Rp 10.000 - Rp 20.000.</li>
+                                        <li class="text-sm text-gray-600">Pakaian Sopan: Hindari mengenakan pakaian terbuka atau terlalu santai seperti celana pendek atau kaos tanpa lengan.</li>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-car text-custom mt-1"></i>
+                                    <div class="ml-4">
+                                        <h4 class="font-medium">Parkir dan Fasilitas</h4>
+                                        <p class="text-sm text-gray-600">Parkir Kendaraan: Rp 5.000 - Rp 20.000 per kendaraan (tergantung jenis kendaraan).
+                                            Fasilitas lain yang tersedia termasuk:</p>
+                                            <li class="text-sm text-gray-600">Warung makanan tradisional Bali.</li>
+                                            <li class="text-sm text-gray-600">Toilet umum yang terjaga kebersihannya.</li>
+                                            <li class="text-sm text-gray-600">Penjual suvenir dan kerajinan Bali.</li>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-hiking text-custom mt-1"></i>
+                                    <div class="ml-4">
+                                        <h4 class="font-medium">Pemandu Wisata</h4>
+                                        <p class="text-sm text-gray-600">Menggunakan pemandu lokal sangat disarankan untuk memahami lebih dalam tentang sejarah dan makna spiritual dari Pura Besakih. Pemandu akan memberikan penjelasan tentang upacara adat dan filosofi yang ada di pura ini.</p>
+                                        <p class="text-sm text-gray-600">Biaya Pemandu Wisata: Rp 300.000 - Rp 500.000 per grup (tergantung durasi dan jumlah orang).</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-cloud-sun text-custom mt-1"></i>
+                                    <div class="ml-4">
+                                        <h4 class="font-medium">Daya Tarik Tambahan</h4>
+                                        <p class="text-sm text-gray-600">Selain nilai spiritualnya, Pura Besakih menawarkan pemandangan alam yang luar biasa:</p>
+                                        <p class="text-sm text-gray-600">Pemandangan Gunung Agung: Dari pura, Anda dapat menikmati pemandangan spektakuler Gunung Agung yang menjulang tinggi. Gunung ini dianggap sebagai gunung suci oleh masyarakat Bali.</li>
+                                        <p class="text-sm text-gray-600">Pemandangan Lembah Besakih: Pura ini terletak di lembah yang sangat hijau, memberikan pemandangan alam yang indah dan menenangkan.</li>
+                                        <p class="text-sm text-gray-600">Arsitektur Pura: Pura Besakih terdiri dari beberapa pura yang lebih kecil, setiap pura memiliki desain dan sejarah yang unik. Kombinasi antara arsitektur Bali dan lingkungan alam sekitar menciptakan atmosfer yang magis dan sakral.</li>
+                                    </div>
+                                </div>
+                    <div class="bg-white rounded-lg shadow-sm p-6 mb-6">
+                        <h3 class="text-lg font-medium mb-4">Lokasi</h3>
+                        <div class="map-container">
+                            <!-- Google Maps Embed -->
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3947.2809824462706!2d115.44998177477268!3d-8.373997591663482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd21cbe3748b2b7%3A0xbfc39798cd1bb4a!2sPura%20Agung%20Besakih!5e0!3m2!1sid!2sid!4v1733568104343!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    
+                        <a href="https://maps.app.goo.gl/4MScob5sngfkNNq8A" target="_blank">
+                            <button class="button button--black mb-4">
+                                <i class="fas fa-location-arrow mr-2"></i>
+                                Petunjuk Lokasi
+                            </button>
+                        </a>
+                    
+                        <button class="button button--white">
+                            <i class="fa-solid fa-share mr-2"></i>
+                            Bagikan Lokasi
+                        </button>
+                    </div>                        
+    </main>
+    
+     <!--footer-->
+     <footer class="bg-black text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-4 gap-8">
+                <div>
+                    <p class="text-sm opacity-80">Temukan keindahan dan keajaiban Pulau Dewata bersama kami.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Tautan</h4>
+                    <ul class="space-y-2 text-sm opacity-80">
+                        <li><a href="#" class="hover:opacity-100">Tentang Kami</a></li>
+                        <li><a href="#" class="hover:opacity-100">Layanan</a></li>
+                        <li><a href="#" class="hover:opacity-100">Destinasi</a></li>
+                        <li><a href="#" class="hover:opacity-100">Kontak</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Kontak</h4>
+                    <ul class="space-y-2 text-sm opacity-80">
+                        <li><i class="fas fa-phone mr-2"></i> +62 361 123456</li>
+                        <li><i class="fas fa-envelope mr-2"></i> info@balitour.com</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i> Jl. Sunset Road No. 88, Kuta, Bali</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Media Sosial</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:opacity-80"><i class="fab fa-facebook-f text-xl"></i></a>
+                        <a href="#" class="hover:opacity-80"><i class="fab fa-instagram text-xl"></i></a>
+                        <a href="#" class="hover:opacity-80"><i class="fab fa-twitter text-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-white border-opacity-20 mt-8 pt-8 text-center text-sm opacity-80">
+                <p>© 2024 Bali Tour. Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/b2e4e7ba14.js" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQSVFZcYq8OVKwOPV7NOwjUSxs_FEJhtw&callback=initMap" async defer></script>
+    <link rel="stylesheet" href="/Css/Gunung/GunungBatur.css">
+    <script src="/JS/GunungBatur.js"></script>
+    
+    <link rel="stylesheet" href="GunungBatur.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex items-center justify-end h-16">
+            <div class="hidden sm:block sm:ml-6">
+              <div class="flex space-x-8">
+                <a href="Home.html" class="text-gray-900 hover:text-gray-700">Home</a>
+                <a href="Artikel.html" class="text-gray-900 hover:text-gray-700">Arikel</a>
+                <a href="#services" class="text-gray-900 hover:text-gray-700">Galeri</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <main class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="mb-8">
+            <nav class="flex" aria-label="Breadcrumb">
+                <ol class="flex items-center space-x-4">
+                    <li>
+                        <a href="Home.html" class="text-gray-400 hover:text-gray-500">Beranda</a>
+                    </li>
+                    <li>
+                        <div class="flex items-center">
+                            <i class="fas fa-chevron-right text-gray-400 text-sm mx-2"></i>
+                            <a href="/Html/Pura/DestinationPura.html" class="text-gray-400 hover:text-gray-500">Pura</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex items-center">
+                            <i class="fas fa-chevron-right text-gray-400 text-sm mx-2"></i>
+                            <span class="text-gray-700">Pura Tanah Lot</span>
+                        </div>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+
+        <div class="relative h-[480px] rounded-lg overflow-hidden mb-12">
+            <img src="/Img/stand/Pura/Pura Tanah Lot2.jpg" alt="Pura Besakih" class="w-full h-full object-cover"/>
+            <div class="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/60 to-transparent">
+                <h1 class="text-4xl font-bold text-white mb-2">Pura Tanah Lot</h1>
+                <p class="text-white/80"><i class="fas fa-map-marker-alt mr-2"></i>Bali, Indonesia</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+            <div class="lg:col-span-2">
+                <section class="mb-12">
+                    <h2 class="text-2xl font-semibold mb-4">Tentang Pura Tanah Lot</h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        Pura Tanah Lot adalah salah satu tempat wisata paling terkenal dan ikonik di Bali, Indonesia. Terletak di tepi pantai, di desa Beraban, Tabanan, pura ini berdiri megah di atas sebuah batu karang besar yang menghadap langsung ke Samudra Hindia. Pura Tanah Lot adalah simbol spiritual dan budaya Bali yang juga menjadi salah satu objek wisata yang wajib dikunjungi oleh para pelancong yang datang ke pulau Dewata. <br>
+                    </p>
+                </section>
+
+                <section class="mb-12">
+                    <h2 class="text-2xl font-semibold mb-6">Aktivitas yang Tersedia</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+                            <i class="fa-solid fa-sun text-custom text-2xl mb-4"></i>
+                            <h3 class="font-medium mb-2">Menikmati Pemandangan Sunset</h3>
+                            <p class="text-gray-500 text-sm">Pura Tanah Lot terkenal dengan pemandangan matahari terbenam yang memukau. Banyak wisatawan datang pada sore hari untuk menyaksikan matahari tenggelam di balik pura yang berdiri di atas batu karang, menciptakan pemandangan alam yang sangat indah.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+                            <i class="fas fa-dragon text-custom text-2xl mb-4"></i>
+                            <h3 class="font-medium mb-2">Melihat Ular Laut Penjaga Pura</h3>
+                            <p class="text-gray-500 text-sm">Di sekitar pura, terdapat ular laut berbisa yang dianggap sebagai penjaga pura. Ular-ular ini hidup di gua-gua sekitar pura dan dipercaya melindungi tempat suci ini, menjadi daya tarik unik bagi pengunjung yang ingin melihatnya lebih dekat.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+                            <i class="fa-solid fa-shopping-bag text-custom text-2xl mb-4"></i>
+                            <h3 class="font-medium mb-2">Menjelajahi Area dan Berbelanja Suvenir</h3>
+                            <p class="text-gray-500 text-sm">Wisatawan juga dapat menjelajahi area sekitar pura dan berbelanja suvenir khas Bali. Terdapat banyak kios yang menjual kerajinan tangan, pakaian tradisional, serta perhiasan Bali, memberikan kesempatan untuk membeli oleh-oleh sambil menikmati suasana sekitar pura.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mb-12">
+                    <h2 class="text-2xl font-semibold mb-6">Galeri Foto</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                        <img src="/Img/stand/Pura/Pura Tanah Lot3.jpg" alt="Aktivitas Air" class="rounded-lg w-full h-64 object-cover"/>
+                        <img src="/Img/stand/Pura/Pura Tanah Lot4.jpg" alt="Sunset" class="rounded-lg w-full h-64 object-cover"/>
+                        <img src="/Img/stand/Pura/Pura Tanah Lot5.jpg" alt="Resort" class="rounded-lg w-full h-64 object-cover"/>
+                    </div>
+                </section>
+
+                <section class="mb-12">
+                    <h2 class="text-2xl font-semibold mb-6">Rekomendasi Hotel</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+                        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                            <!--Hotel Pertama-->
+                            <a href="https://www.traveloka.com/id-id/hotel/detail?spec=07-12-2024.08-12-2024.1.1.HOTEL.3164.Hotel%20Tugu%20Bali.1">
+                            <img src="/Img/stand/Rekomendasi Hotel Pura/Tugu Bali.jpeg" alt="Hotel Tugu Bali" class="w-full h-48 object-cover"/>
+                            <div class="p-4">
+                                <h3 class="font-medium text-lg mb-2">Hotel Tugu Bali</h3>
+                                <p class="text-gray-600 text-sm mb-3">Pantai Jl. Pantai Batu Bolong No.117x, Canggu, Kuta Utara, Badung Regency, Bali 80361</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-star text-yellow-400"></i>
+                                        <span class="ml-1 text-sm text-gray-600">4.7</span>
+                                    </div>
+                                    <span class="text-custom font-medium">Mulai Rp 3.300.000</span>
+                                </div>
+                            </a>
+                            </div>
+                        </div>
+                        <!--Hotel Kedua-->
+                        <a href="https://www.traveloka.com/id-id/hotel/detail?spec=07-12-2024.08-12-2024.1.1.HOTEL.3000010001488.Natya%20Tanah%20Lot.1">
+                        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                            <img src="/Img/stand/Rekomendasi Hotel Pura/natya tanah lot.jpeg" alt="Natya Hotel Tanah Lot" class="w-full h-48 object-cover"/>
+                            <div class="p-4">
+                                <h3 class="font-medium text-lg mb-2">Natya Hotel Tanah Lot</h3>
+                                <p class="text-gray-600 text-sm mb-3">Jl. Kawasan Wisata Tanah Lot, Beraban, Kec. Kediri, Kabupaten Tabanan, Bali 82171</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-star text-yellow-400"></i>
+                                        <span class="ml-1 text-sm text-gray-600">4.7</span>
+                                    </div>
+                                    <span class="text-custom font-medium">Mulai Rp 1.200.000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!--Hotel KeTiga -->
+                    <a href="https://www.traveloka.com/id-id/hotel/detail?spec=07-12-2024.08-12-2024.1.1.HOTEL.3000010013377.Bali%20Merita%20Villa.1">
+                        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                            <img src="/Img/stand/Rekomendasi Hotel Pura/Tirta Sari Bungalow.jpeg" alt="Bali Merita Villa" class="w-full h-48 object-cover"/>
+                            <div class="p-4">
+                                <h3 class="font-medium text-lg mb-2">Bali Merita Villa</h3>
+                                <p class="text-gray-600 text-sm mb-3"> Jl. Tegal Cupek Anyar Kelod No.67, Kerobokan, Kec. Kuta Utara, Kabupaten Badung, Bali 80361</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-star text-yellow-400"></i>
+                                        <span class="ml-1 text-sm text-gray-600">4.1</span>
+                                    </div>
+                                    <span class="text-custom font-medium">Mulai Rp 500.000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!--Hotel Keempat-->
+                    <a href="https://www.traveloka.com/id-id/hotel/detail?spec=07-12-2024.08-12-2024.1.1.HOTEL.45533.Waka%20Gangga.1">
+                        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                            <img src="/Img/stand/Rekomendasi Hotel Pura/Waka Gangga.jpeg" alt="WakaGangga" class="w-full h-48 object-cover"/>
+                            <div class="p-4">
+                                <h3 class="font-medium text-lg mb-2">WakaGangga</h3>
+                                <p class="text-gray-600 text-sm mb-3">Banjar, Jl. Yeh Gangga I, Sudimara, Kec. Tabanan, Bali 82115</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-star text-yellow-400"></i>
+                                        <span class="ml-1 text-sm text-gray-600">4.6</span>
+                                    </div>
+                                    <span class="text-custom font-medium">Mulai Rp 2.000.000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </section>
+
+                <section class="mb-12">
+                    <h2 class="text-2xl font-semibold mb-6">Pura Lain yang Mungkin Anda Suka</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                            <img src="/Img/stand/Pura/Pura Tanah Lot.jpg" alt="Pura Tanah Lot" class="w-full h-48 object-cover"/>
+                            <div class="p-4">
+                                <h3 class="font-medium">Pura Tanah Lot</h3>
+                                <p class="text-sm text-gray-500">Tabanan, Bali Barat</p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                            <img src="/Img/stand/Pura/Pura Samuan Tiga.jpg" alt="Pura Samuan Tiga" class="w-full h-48 object-cover"/>
+                            <div class="p-4">
+                                <h3 class="font-medium">Pura Samuan Tiga</h3>
+                                <p class="text-sm text-gray-500">Tabanan, Bali Barat</p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                            <img src="/Img/stand/Pura/Pura Goa Gajah.jpg" alt="Pura Goa Gajah" class="w-full h-48 object-cover"/>
+                            <div class="p-4">
+                                <h3 class="font-medium">Pura Goa Gajah</h3>
+                                <p class="text-sm text-gray-500">Gianyar, Bali Tengah</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>                              
+            </div>
+
+            <div class="lg:col-span-1">
+                <div class="sticky top-8">
+                    <div class="bg-white rounded-lg shadow-sm p-6 mb-6">
+                        <div class="bg-white rounded-lg shadow-sm p-6">
+                            <h3 class="text-lg font-medium mb-4">Informasi Praktis</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start">
+                                    <i class="fas fa-clock text-custom mt-1"></i>
+                                    <div class="ml-4">
+                                        <h4 class="font-medium">Jam Operasional</h4>
+                                        <p class="text-sm text-gray-600">Senin – Minggu: 07:00 - 19:00 WITA</p>
+                                        <p class="text-sm text-gray-600">Disarankan untuk mengunjungi lebih awal atau di sore hari untuk menghindari keramaian pengunjung. Waktu terbaik untuk menikmati keindahan pura adalah saat matahari terbenam, ketika pemandangan sangat spektakuler.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-ticket-alt text-custom mt-1"></i>
+                                    <div class="ml-4">
+                                        <h4 class="font-medium">Tiket Masuk</h4>
+                                        <p class="text-sm text-gray-600">Tiket Masuk: Rp 60.000 per orang dewasa
+                                            Tiket ini memberi akses ke area utama pura dan sekitarnya. Namun, jika ingin memasuki area khusus atau menggunakan layanan tambahan seperti pemandu wisata, biaya tambahan mungkin dikenakan.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-ticket-alt text-custom mt-1"></i>
+                                    <div class="ml-4">
+                                        <h4 class="font-medium">Aturan Berpakaian</h4>
+                                        <p class="text-sm text-gray-600">Sarung dan Selendang: Pengunjung diwajibkan mengenakan sarung dan selendang saat memasuki area pura. Sarung dan selendang biasanya tersedia untuk disewa di pintu masuk dengan biaya sekitar Rp 10.000 - Rp 20.000.
+                                            Pakaian Sopan: Harap mengenakan pakaian yang sopan dan menutupi bagian tubuh yang tidak seharusnya terbuka, seperti celana pendek atau kaos tanpa lengan.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-car text-custom mt-1"></i>
+                                    <div class="ml-4">
+                                        <h4 class="font-medium">Parkir dan Fasilitas</h4>
+                                        <p class="text-sm text-gray-600">Parkir Kendaraan: Rp 5.000 - Rp 20.000 per kendaraan (tergantung jenis kendaraan).
+                                            Fasilitas Lainnya:</p>
+                                            <li class="text-sm text-gray-600">Warung makanan tradisional Bali.</li>
+                                            <li class="text-sm text-gray-600">Toilet umum yang terjaga kebersihannya.</li>
+                                            <li class="text-sm text-gray-600">Penjual suvenir dan kerajinan Bali.</li>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-hiking text-custom mt-1"></i>
+                                    <div class="ml-4">
+                                        <h4 class="font-medium">Pemandu Wisata</h4>
+                                        <p class="text-sm text-gray-600">Menggunakan pemandu wisata lokal sangat disarankan untuk memahami lebih dalam mengenai sejarah dan budaya Pura Tanah Lot.
+                                            Biaya Pemandu Wisata: Rp 300.000 - Rp 500.000 per grup (tergantung durasi dan jumlah orang).</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-cloud-sun text-custom mt-1"></i>
+                                    <div class="ml-4">
+                                        <h4 class="font-medium">Daya Tarik Tambahan</h4>
+                                        <p class="text-sm text-gray-600">Pemandangan Laut: Pura Tanah Lot terkenal dengan lokasinya yang berada di atas batu karang yang dikelilingi laut. Pemandangan matahari terbenam di sini sangat memukau dan menjadi daya tarik utama bagi wisatawan.
+                                            Pura Tanah Lot: Pura ini adalah salah satu pura laut yang paling terkenal di Bali, yang dipercaya sebagai tempat pemujaan Dewi Baruna, dewi laut dalam mitologi Bali.
+                                            Pemandangan Alam Sekitar: Selain pemandangan laut yang indah, kawasan sekitar juga menawarkan panorama yang menenangkan, dengan tebing-tebing karang yang memukau.
+                                            Pura Tanah Lot adalah salah satu tempat wisata yang wajib dikunjungi bagi para wisatawan yang ingin merasakan nuansa spiritual dan menikmati keindahan alam Bali.</p>
+                                    </div>
+                                </div>
+                    <div class="bg-white rounded-lg shadow-sm p-6 mb-6">
+                        <h3 class="text-lg font-medium mb-4">Lokasi</h3>
+                        <div class="map-container">
+                            <!-- Google Maps Embed -->
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d246.54529288525578!2d115.09063280127363!3d-8.622408183695674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd237824f71deab%3A0xcaabe270f7e34d69!2sTanah%20Lot!5e0!3m2!1sid!2sid!4v1733570726914!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    
+                        <a href="https://maps.app.goo.gl/CrYaBmtTCdkd8ogn7" target="_blank">
+                            <button class="button button--black mb-4">
+                                <i class="fas fa-location-arrow mr-2"></i>
+                                Petunjuk Lokasi
+                            </button>
+                        </a>
+                    
+                        <button class="button button--white">
+                            <i class="fa-solid fa-share mr-2"></i>
+                            Bagikan Lokasi
+                        </button>
+                    </div>                        
+    </main>
+    
+     <!--footer-->
+     <footer class="bg-black text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-4 gap-8">
+                <div>
+                    <p class="text-sm opacity-80">Temukan keindahan dan keajaiban Pulau Dewata bersama kami.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Tautan</h4>
+                    <ul class="space-y-2 text-sm opacity-80">
+                        <li><a href="#" class="hover:opacity-100">Tentang Kami</a></li>
+                        <li><a href="#" class="hover:opacity-100">Layanan</a></li>
+                        <li><a href="#" class="hover:opacity-100">Destinasi</a></li>
+                        <li><a href="#" class="hover:opacity-100">Kontak</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Kontak</h4>
+                    <ul class="space-y-2 text-sm opacity-80">
+                        <li><i class="fas fa-phone mr-2"></i> +62 361 123456</li>
+                        <li><i class="fas fa-envelope mr-2"></i> info@balitour.com</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i> Jl. Sunset Road No. 88, Kuta, Bali</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Media Sosial</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:opacity-80"><i class="fab fa-facebook-f text-xl"></i></a>
+                        <a href="#" class="hover:opacity-80"><i class="fab fa-instagram text-xl"></i></a>
+                        <a href="#" class="hover:opacity-80"><i class="fab fa-twitter text-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-white border-opacity-20 mt-8 pt-8 text-center text-sm opacity-80">
+                <p>© 2024 Bali Tour. Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+        </footer>
+</body>
+</html>
