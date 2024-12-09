@@ -1,41 +1,67 @@
-/* Gaya untuk gambar tanpa border */
-img {
-  border: none;
-}
-/* Tentang Bali Section */
-section.py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
-section.bg-gray-50 {
-  background-color: #f9fafb;
+/* Typing Animation */
+@keyframes typing {
+  from {
+      width: 0;
+  }
+  to {
+      width: 100%;
+  }
 }
 
-section.bg-gray-50 .max-w-7xl {
-  margin: 0 auto;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+.animate-typing {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 3s steps(30) 1s forwards;
 }
 
-section.bg-gray-50 .space-y-6 {
-  margin-bottom: 1.5rem;
+/* Scroll Fade Animation */
+@keyframes scroll-fade {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
 }
 
-section.bg-gray-50 h2 {
-  font-size: 2.5rem;
-  font-family: 'Prata', serif;
-  color: #2d3748;
+.scroll-fade {
+  animation: scroll-fade 1s ease-in-out;
 }
 
-section.bg-gray-50 p {
-  color: #4a5568;
-  line-height: 1.75;
+/* Slide-In Animation */
+@keyframes slide-in {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
 }
 
-section.bg-gray-50 .button {
-  background-color: #000;
-  color: white;
-  padding: 0.75rem 1.5rem;
-  border-radius: 0.375rem;
+.slide-in {
+  animation: slide-in 0.5s ease-in-out;
+}
+
+/* Animasi Fade In ketika elemen berada di viewport */
+@keyframes fade-in {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+/* Class untuk efek fade-in */
+.fade-in {
+  animation: fade-in 1s ease-in-out forwards;
+}
+
+/* Apply the slide-in animation to images in 'Eksplore Bali' */
+.fade-in-image {
+  opacity: 0;
+  animation: fade-in 1s ease-in-out forwards;
 }

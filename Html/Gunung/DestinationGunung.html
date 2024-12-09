@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/b2e4e7ba14.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/Css/Gunung/DestinationGunung.css">
     <title>Document</title>
 </head>
 <body>
+
+    <!-- Navigation Bar -->
     <nav class="bg-white shadow">
         <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-end h-16">
@@ -17,46 +20,49 @@
                     <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
                         <a href="/Html/Home.html" class="border-custom text-custom inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Beranda</a>
                         <a href="/Html/Artikel.html" class="border-transparent text-gray-500 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Artikel</a>
-                        <a href="#" class="border-transparent text-gray-500 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Galeri</a>
+                        <a href="Galeri.html" class="border-transparent text-gray-500 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Galeri</a>
                     </div>
                 </div>
             </div>
         </div>
     </nav>
 
+    <!-- Header -->
     <header class="relative">
         <div class="h-[600px] w-full overflow-hidden">
-            <img src="/img/stand/Gunung/GunungBatur2.jpg" class="w-full h-full object-cover" alt="Gunung Batur"/>
+            <img src="/img/stand/Gunung/GunungBatur2.jpg" class="w-full h-full object-cover header-image" alt="Gunung Batur"/>
             <div class="absolute inset-0 bg-black bg-opacity-40"></div>
             <div class="absolute inset-0 flex items-center justify-center text-center">
                 <div class="max-w-4xl px-4">
-                    <h1 class="text-5xl font-bold text-white mb-6">Pesona Gunung Bali</h1>
+                    <h1 class="text-5xl font-bold text-white mb-6 header-text">Pesona Gunung Bali</h1>
                     <p class="text-xl text-white">Jelajahi keindahan gunung-gunung di Pulau Dewata yang menawarkan pemandangan menakjubkan dan pengalaman mendaki yang tak terlupakan</p>
                 </div>
             </div>
         </div>
     </header>
 
+    <!-- Main Content -->
     <main>
+        <!-- Aktivitas Section -->
         <section class="py-16 bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-3xl font-bold text-gray-900 text-center mb-12">Aktivitas yang Tersedia</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="text-center">
+                    <div class="text-center activity-card">
                         <div class="w-16 h-16 mx-auto bg-black bg-opacity-10 rounded-full flex items-center justify-center mb-4">
                             <i class="fas fa-hiking text-2xl text-custom"></i>
                         </div>
                         <h3 class="text-xl font-semibold mb-2">Hiking</h3>
                         <p class="text-gray-600">Nikmati petualangan mendaki gunung dengan pemandu berpengalaman</p>
                     </div>
-                    <div class="text-center">
+                    <div class="text-center activity-card">
                         <div class="w-16 h-16 mx-auto bg-black bg-opacity-10 rounded-full flex items-center justify-center mb-4">
                             <i class="fas fa-campground text-2xl text-custom"></i>
                         </div>
                         <h3 class="text-xl font-semibold mb-2">Camping</h3>
                         <p class="text-gray-600">Bermalam di alam terbuka dengan pemandangan bintang yang menakjubkan</p>
                     </div>
-                    <div class="text-center">
+                    <div class="text-center activity-card">
                         <div class="w-16 h-16 mx-auto bg-black bg-opacity-10 rounded-full flex items-center justify-center mb-4">
                             <i class="fas fa-camera text-2xl text-custom"></i>
                         </div>
@@ -67,95 +73,98 @@
             </div>
         </section>
 
+        <!-- Galeri Foto Section -->
         <section class="py-16 bg-gray-50">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-3xl font-bold text-gray-900 text-center mb-12">Galeri Foto</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <img src="/img/stand/Gunung/GunungBatur.jpg" class="w-full h-[500px] object-cover rounded-lg shadow-lg" alt="Sunrise di Gunung Batur"/>
-                    <img src="/img/stand/Gunung/GunungAgung.jpg" class="w-full h-[500px] object-cover rounded-lg shadow-lg" alt="Gunung Agung"/>
-                    <img src="/img/stand/Gunung/Gunung Batukaru.jpg" class="w-full h-[500px] object-cover rounded-lg shadow-lg" alt="Gunung Batukaru"/>
+                    <img src="/img/stand/Gunung/GunungBatur.jpg" class="w-full h-[500px] object-cover rounded-lg shadow-lg gallery-img" alt="Sunrise di Gunung Batur"/>
+                    <img src="/img/stand/Gunung/GunungAgung.jpg" class="w-full h-[500px] object-cover rounded-lg shadow-lg gallery-img" alt="Gunung Agung"/>
+                    <img src="/img/stand/Gunung/Gunung Batukaru.jpg" class="w-full h-[500px] object-cover rounded-lg shadow-lg gallery-img" alt="Gunung Batukaru"/>
                 </div>
             </div>
         </section>
 
-        <section class="py-16 bg-white">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl font-bold text-gray-900 text-center mb-12">Rekomendasi Gunung</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                        <img src="/img/stand/Gunung/GunungBatur2.jpg" class="w-full h-48 object-cover" alt="Gunung Batur"/>
-                        <div class="p-6">
-                            <h3 class="text-xl font-semibold mb-2">Gunung Batur</h3>
-                            <p class="text-gray-600 mb-4">1.717 mdpl</p>
-                            <a href="GunungBatur.html"><button class="bg-black text-white px-4 py-2 rounded-lg w-full">Lihat Detail</button></a>
+                <!-- Rekomendasi Gunung Section -->
+                <section class="py-16 bg-white">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <h2 class="text-3xl font-bold text-gray-900 text-center mb-12">Rekomendasi Gunung</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                            <div class="bg-white rounded-lg shadow-lg overflow-hidden gunung-card">
+                                <img src="/img/stand/Gunung/GunungBatur2.jpg" class="w-full h-48 object-cover" alt="Gunung Batur"/>
+                                <div class="p-6">
+                                    <h3 class="text-xl font-semibold mb-2">Gunung Batur</h3>
+                                    <p class="text-gray-600 mb-4">1.717 mdpl</p>
+                                    <a href="/Html/Gunung/GunungBatur.html"><button class="bg-black text-white px-4 py-2 rounded-lg w-full btn-hover">Lihat Detail</button></a>
+                                </div>
+                            </div>
+                            <div class="bg-white rounded-lg shadow-lg overflow-hidden gunung-card">
+                                <img src="/img/stand/Gunung/GunungAgung2.jpg" class="w-full h-48 object-cover" alt="Gunung Agung"/>
+                                <div class="p-6">
+                                    <h3 class="text-xl font-semibold mb-2">Gunung Agung</h3>
+                                    <p class="text-gray-600 mb-4">3.031 mdpl</p>
+                                    <a href="/Html/Gunung/GunungAgung.html"><button class="bg-black text-white px-4 py-2 rounded-lg w-full btn-hover">Lihat Detail</button></a>
+                                </div>
+                            </div>
+                            <div class="bg-white rounded-lg shadow-lg overflow-hidden gunung-card">
+                                <img src="/Img/stand/Gunung/Gunung Batukaru2.jpg" class="w-full h-48 object-cover" alt="Gunung Batukaru"/>
+                                <div class="p-6">
+                                    <h3 class="text-xl font-semibold mb-2">Gunung Lesung</h3>
+                                    <p class="text-gray-600 mb-4">2.276 mdpl</p>
+                                    <a href="/Html/Gunung/GunungLesung.html"><button class="bg-black text-white px-4 py-2 rounded-lg w-full btn-hover">Lihat Detail</button></a>
+                                </div>
+                            </div>
+                            <div class="bg-white rounded-lg shadow-lg overflow-hidden gunung-card">
+                                <img src="/Img/stand/Gunung/Gunung abang.jpg" class="w-full h-48 object-cover" alt="Gunung Abang"/>
+                                <div class="p-6">
+                                    <h3 class="text-xl font-semibold mb-2">Gunung Abang</h3>
+                                    <p class="text-gray-600 mb-4">2.152 mdpl</p>
+                                    <a href="/Html/Gunung/GunungAbang.html"><button class="bg-black text-white px-4 py-2 rounded-lg w-full btn-hover">Lihat Detail</button></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                        <img src="/img/stand/Gunung/GunungAgung2.jpg" class="w-full h-48 object-cover" alt="Gunung Agung"/>
-                        <div class="p-6">
-                            <h3 class="text-xl font-semibold mb-2">Gunung Agung</h3>
-                            <p class="text-gray-600 mb-4">3.031 mdpl</p>
-                            <a href="GunungAgung.html"><button class="bg-black text-white px-4 py-2 rounded-lg w-full">Lihat Detail</button></a>
-                        </div>
-                    </div>
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                        <img src="/img/stand/Gunung/Gunung Batukaru2.jpg" class="w-full h-48 object-cover" alt="Gunung Batukaru"/>
-                        <div class="p-6">
-                            <h3 class="text-xl font-semibold mb-2">Gunung Batukaru</h3>
-                            <p class="text-gray-600 mb-4">2.276 mdpl</p>
-                            <a href="GunungBatukaru.html"><button class="bg-black text-white px-4 py-2 rounded-lg w-full">Lihat Detail</button></a>
-                        </div>
-                    </div>
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                        <img src="/img/stand/Gunung/Gunung abang.jpg" class="w-full h-48 object-cover" alt="Gunung Abang"/>
-                        <div class="p-6">
-                            <h3 class="text-xl font-semibold mb-2">Gunung Abang</h3>
-                            <p class="text-gray-600 mb-4">2.152 mdpl</p>
-                            <a href="GunungAbang.html"><button class="bg-black text-white px-4 py-2 rounded-lg w-full">Lihat Detail</button></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                </section>        
     </main>
 
-          <!--footer-->
-          <footer class="bg-black text-white py-12">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid grid-cols-4 gap-8">
-                    <div>
-                        <p class="text-sm opacity-80">Temukan keindahan dan keajaiban Pulau Dewata bersama kami.</p>
-                    </div>
-                    <div>
-                        <h4 class="font-semibold mb-4">Tautan</h4>
-                        <ul class="space-y-2 text-sm opacity-80">
-                            <li><a href="#" class="hover:opacity-100">Tentang Kami</a></li>
-                            <li><a href="#" class="hover:opacity-100">Layanan</a></li>
-                            <li><a href="#" class="hover:opacity-100">Destinasi</a></li>
-                            <li><a href="#" class="hover:opacity-100">Kontak</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 class="font-semibold mb-4">Kontak</h4>
-                        <ul class="space-y-2 text-sm opacity-80">
-                            <li><i class="fas fa-phone mr-2"></i> +62 361 123456</li>
-                            <li><i class="fas fa-envelope mr-2"></i> info@balitour.com</li>
-                            <li><i class="fas fa-map-marker-alt mr-2"></i> Jl. Sunset Road No. 88, Kuta, Bali</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 class="font-semibold mb-4">Media Sosial</h4>
-                        <div class="flex space-x-4">
-                            <a href="#" class="hover:opacity-80"><i class="fab fa-facebook-f text-xl"></i></a>
-                            <a href="#" class="hover:opacity-80"><i class="fab fa-instagram text-xl"></i></a>
-                            <a href="#" class="hover:opacity-80"><i class="fab fa-twitter text-xl"></i></a>
-                        </div>
-                    </div>
+    <!-- Footer Section -->
+    <footer class="bg-black text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-4 gap-8">
+                <div>
+                    <p class="text-sm opacity-80">Temukan keindahan dan keajaiban Pulau Dewata bersama kami.</p>
                 </div>
-                <div class="border-t border-white border-opacity-20 mt-8 pt-8 text-center text-sm opacity-80">
-                    <p>© 2024 Bali Tour. Hak Cipta Dilindungi.</p>
+                <div>
+                    <h4 class="font-semibold mb-4">Tautan</h4>
+                    <ul class="space-y-2 text-sm opacity-80">
+                        <li><a href="#" class="hover:opacity-100">Tentang Kami</a></li>
+                        <li><a href="#" class="hover:opacity-100">Layanan</a></li>
+                        <li><a href="#" class="hover:opacity-100">Destinasi</a></li>
+                        <li><a href="#" class="hover:opacity-100">Kontak</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Kontak</h4>
+                    <ul class="space-y-2 text-sm opacity-80">
+                        <li><i class="fas fa-phone mr-2"></i> +62 361 123456</li>
+                        <li><i class="fas fa-envelope mr-2"></i> info@balitour.com</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i> Jl. Sunset Road No. 88, Kuta, Bali</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Media Sosial</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:opacity-80"><i class="fab fa-facebook-f text-xl"></i></a>
+                        <a href="#" class="hover:opacity-80"><i class="fab fa-instagram text-xl"></i></a>
+                        <a href="#" class="hover:opacity-80"><i class="fab fa-twitter text-xl"></i></a>
+                    </div>
                 </div>
             </div>
-            </footer>
+            <div class="border-t border-white border-opacity-20 mt-8 pt-8 text-center text-sm opacity-80">
+                <p>© 2024 Bali Tour. Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>

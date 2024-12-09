@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ArtikelKpd.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/b2e4e7ba14.js" crossorigin="anonymous"></script>
+    <script src="/JS/Galeri.js"></script>
+    <title>Galeri Wisata Bali</title>
+</head>
+<body class="m-0 p-0 bg-gray-50">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow">
+        <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-end h-16">
+                <div class="flex">
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                        <a href="/Html/Home.html" class="border-custom text-custom inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Beranda</a>
+                        <a href="/Html/Artikel.html" class="border-transparent text-gray-500 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Artikel</a>
+                        <a href="Galeri.html" class="border-transparent text-gray-500 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Galeri</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Galeri -->
+    <main class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <h1 class="text-4xl font-bold text-gray-900 text-center mb-12">Galeri Wisata Bali</h1>
+
+        <!-- Galeri Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Gambar 1 -->
+                <div class="relative">
+                    <img src="/Img/stand/rafting.jpg" alt="Rafting di Bali" class="w-full h-60 object-cover rounded-lg shadow-lg cursor-pointer" onclick="openModal(this.src)">
+                </div>
+                <!-- Gambar 2 -->
+                <div class="relative">
+                    <img src="/Img/stand/Gunung/Gunung abang3.jpg" alt="Sunset Bali" class="w-full h-60 object-cover rounded-lg shadow-lg cursor-pointer" onclick="openModal(this.src)">
+                </div>
+                <!-- Gambar 3 -->
+                <div class="relative">
+                    <img src="/Img/stand/Pantai/Pantai Jimbaran2.jpg" alt="Pantai Bali" class="w-full h-60 object-cover rounded-lg shadow-lg cursor-pointer" onclick="openModal(this.src)">
+                </div>
+                <!-- Gambar 4 -->
+                <div class="relative">
+                    <img src="/Img/stand/Pura/Eksplorasi Arsitektur dan Seni Bali.jpg" alt="Pura Bali" class="w-full h-60 object-cover rounded-lg shadow-lg cursor-pointer" onclick="openModal(this.src)">
+                </div>
+                <!-- Gambar 5 -->
+                <div class="relative">
+                    <img src="/Img/stand/Kuliner.jpg" alt="Makanan Bali" class="w-full h-60 object-cover rounded-lg shadow-lg cursor-pointer" onclick="openModal(this.src)">
+                </div>
+                <!-- Gambar 6 -->
+                <div class="relative">
+                    <img src="/Img/stand/baile-tradicional-balines.jpg" alt="Hutan Bali" class="w-full h-60 object-cover rounded-lg shadow-lg cursor-pointer" onclick="openModal(this.src)">
+                </div>
+                <!-- Gambar 7 -->
+                <div class="relative">
+                    <img src="/Img/stand/pantai.jpg" alt="Sungai Bali" class="w-full h-60 object-cover rounded-lg shadow-lg cursor-pointer" onclick="openModal(this.src)">
+                </div>
+                <!-- Gambar 8 -->
+                <div class="relative">
+                    <img src="/Img/stand/Kegitan/Jetski.jpg" alt="Pasar Bali" class="w-full h-60 object-cover rounded-lg shadow-lg cursor-pointer" onclick="openModal(this.src)">
+                </div>
+            </div>
+
+
+        <!-- Modal untuk memperbesar gambar -->
+        <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden">
+            <span class="absolute top-4 right-4 text-white text-2xl cursor-pointer" onclick="closeModal()">&times;</span>
+            <img id="modal-image" src="" alt="Image Preview" class="max-w-full max-h-full object-contain rounded-lg shadow-lg">
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12 max-w-full w-full">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-4 gap-8">
+                <div>
+                    <p class="text-sm opacity-80">Temukan keindahan dan keajaiban Pulau Dewata bersama kami.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Tautan</h4>
+                    <ul class="space-y-2 text-sm opacity-80">
+                        <li><a href="#" class="hover:opacity-100">Tentang Kami</a></li>
+                        <li><a href="#" class="hover:opacity-100">Layanan</a></li>
+                        <li><a href="#" class="hover:opacity-100">Destinasi</a></li>
+                        <li><a href="#" class="hover:opacity-100">Kontak</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Kontak</h4>
+                    <ul class="space-y-2 text-sm opacity-80">
+                        <li><i class="fas fa-phone mr-2"></i> +62 361 123456</li>
+                        <li><i class="fas fa-envelope mr-2"></i> info@balitour.com</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i> Jl. Sunset Road No. 88, Kuta, Bali</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Media Sosial</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:opacity-80"><i class="fab fa-facebook-f text-xl"></i></a>
+                        <a href="#" class="hover:opacity-80"><i class="fab fa-instagram text-xl"></i></a>
+                        <a href="#" class="hover:opacity-80"><i class="fab fa-twitter text-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-white border-opacity-20 mt-8 pt-8 text-center text-sm opacity-80">
+                <p>© 2024 Bali Tour. Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

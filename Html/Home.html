@@ -5,163 +5,174 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/b2e4e7ba14.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="Home.css">
-    <title></title>
+    <link rel="stylesheet" href="/Css/Home.css"> <!-- Link to external CSS file for custom animations -->
+    <script src="/JS/home.js" defer></script>
+    <title>Bali Tour</title>
 </head>
-<body>
-    <nav class="bg-white shadow-md">
+<body class="bg-gray-100">
+    <nav class="bg-white shadow-md sticky top-0 z-50 transition-all duration-300 ease-in-out">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="flex items-center justify-end h-16">
-            <div class="hidden sm:block sm:ml-6">
-              <div class="flex space-x-8">
-                <a href="#home" class="text-gray-900 hover:text-gray-700">Home</a>
-                <a href="Artikel.html" class="text-gray-900 hover:text-gray-700">Arikel</a>
-                <a href="#services" class="text-gray-900 hover:text-gray-700">Galeri</a>
-              </div>
+            <div class="flex items-center justify-end h-16">
+                <div class="hidden sm:block sm:ml-6">
+                    <div class="flex space-x-8">
+                        <a href="/Html/Home.html" class="text-gray-900 hover:text-gray-700">Home</a>
+                        <a href="Artikel.html" class="text-gray-900 hover:text-gray-700">Artikel</a>
+                        <a href="Galeri.html" class="text-gray-900 hover:text-gray-700">Galeri</a>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </nav>
+    </nav>
 
-    <!--Main section-->
     <main>
+        <!-- Main section with animation -->
         <section class="relative">
             <img src="/img/Background/option 1.jpg" class="w-full h-full object-cover" alt="Pura Ulun Danu Beratan"/>
             <div class="absolute inset-0 bg-black bg-opacity-40"></div>
             <div class="absolute inset-0 flex items-center justify-center">
                 <div class="text-center">
-                    <h1 class="text-6xl font-[&#39;Prata&#39;] text-white mb-6">Bali</h1>
+                    <h1 class="text-6xl font-serif text-white mb-2 animate-typing">Bali</h1>
                     <p class="text-xl text-white max-w-2xl mx-auto">Jelajahi keindahan Pulau Dewata dengan pengalaman yang tak terlupakan</p>
                 </div>
             </div>
         </section>
+
+        <!-- Section: About Bali with Fade In Effect -->
+        <section class="py-20 bg-gray-50 opacity-0 transition-opacity duration-1000 ease-in-out scroll-fade">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-2 gap-12">
+                    <div class="space-y-6">
+                        <h2 class="text-4xl font-serif text-custom">Tentang Bali</h2>
+                        <p class="text-gray-600 leading-relaxed">Bali, sebuah pulau yang terletak di Indonesia, memang layak disebut sebagai "surga tropis". Keindahan alamnya yang mempesona, dengan kombinasi pantai berpasir putih, laut biru jernih, dan pegunungan hijau yang menjulang, menjadikan Bali destinasi wisata yang sangat digemari. Bali bukan hanya terkenal karena pantainya yang indah, tetapi juga karena kekayaan alamnya yang beragam. Di bagian utara, Anda dapat menemukan danau yang tenang dan pegunungan yang sejuk, sementara di bagian selatan, pantai-pantai yang indah menyajikan pemandangan laut yang spektakuler.
+                            Di Bali, Anda dapat menikmati pemandangan alam yang beragam, mulai dari Tegallalang Rice Terraces yang terkenal dengan sawah terasering yang hijau dan subur, hingga Danau Beratan yang memukau dengan Pura Ulun Danu yang cantik, terletak di tengah danau. Bali juga memiliki banyak gunung yang bisa didaki, seperti Gunung Agung yang merupakan gunung tertinggi di Bali, serta Gunung Batur yang terkenal dengan matahari terbit yang menakjubkan...</p>
+                        <button class="bg-black text-white py-2 px-4 rounded-lg transition-transform duration-300 ease-in-out transform hover:scale-105 hover:bg-gray-800"><a href="/Html/Artikel4.html">Pelajari Lebih Lanjut</a></button>
+                    </div>
+                    <div>
+                        <img src="/img/stand/baile-tradicional-balines.jpg" alt="Tarian Bali"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Popular Activities -->
+        <section class="py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-serif text-custom text-center mb-16">Aktivitas Populer</h2>
+                <div class="grid grid-cols-3 gap-8">
+                    <!-- Card 1: Trekking -->
+                    <div class="rounded-lg overflow-hidden shadow-lg">
+                        <img src="/img/stand/trakking.jpg" class="w-full h-48 object-cover" alt="Trekking"/>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-3">Trekking</h3>
+                            <p class="text-gray-600 mb-4">Jelajahi keindahan alam Bali dengan trekking di jalur-jalur yang menakjubkan...</p>
+                            <a href="/Html/Artikel5.html"><button class="bg-black text-white px-6 py-2 rounded-lg w-full">Lihat Detail</button></a>
+                        </div>
+                    </div>
+                    <!-- Card 2: Snorkeling -->
+                    <div class="rounded-lg overflow-hidden shadow-lg">
+                        <img src="/img/stand/snorkling.jpg" class="w-full h-48 object-cover" alt="Snorkeling"/>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-3">Snorkeling</h3>
+                            <p class="text-gray-600 mb-4">Temukan keindahan bawah laut Bali dengan snorkeling di spot-spot terbaik...</p>
+                            <a href="/Html/Artikel6.html"><button class="bg-black text-white px-6 py-2 rounded-lg w-full">Lihat Detail</button></a>
+                        </div>
+                    </div>
+                    <!-- Card 3: Rafting -->
+                    <div class="rounded-lg overflow-hidden shadow-lg">
+                        <img src="/img/stand/rafting.jpg" class="w-full h-48 object-cover" alt="Rafting"/>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-3">Rafting</h3>
+                            <p class="text-gray-600 mb-4">Rasakan sensasi petualangan dengan rafting di Sungai Ayung...</p>
+                            <a href="/Html/Artikel7.html"><button class="bg-black text-white px-6 py-2 rounded-lg w-full">Lihat Detail</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Eksplore Bali -->
             <section class="py-20 bg-gray-50">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div class="grid grid-cols-2 gap-12">
-                        <div class="space-y-6">
-                            <h2 class="text-4xl font-[&#39;Prata&#39;] text-custom">Tentang Bali</h2>
-                            <p class="text-gray-600 leading-relaxed">Bali adalah sebuah pulau di Indonesia yang terkenal dengan keindahan alamnya yang memukau, budaya yang kaya, dan keramahan penduduknya. Dari pantai yang menakjubkan hingga terasering sawah yang hijau, dari upacara keagamaan yang megah hingga seni tradisional yang memesona, Bali menawarkan pengalaman yang tak terlupakan bagi setiap pengunjungnya.</p>
-                            <button class="bg-black text-white py-2 px-4 rounded-lg ">Pelajari Lebih Lanjut </button>
-                        </div>
-                        <div>
-                            <img src="/img/stand/baile-tradicional-balines.jpg" alt="Tarian Bali"/>
-                        </div>
+                    <h2 class="text-4xl font-serif text-custom text-center mb-16">Eksplore Bali</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Pantai Card -->
+                        <a href="/Html/Pantai/DestinationPantai.html" class="group relative overflow-hidden rounded-lg transition-transform duration-500 ease-in-out transform hover:scale-105">
+                            <img src="/img/stand/pantai.jpg" class="w-full h-[500px] object-cover" alt="Pantai"/>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70 transition-opacity duration-500 ease-in-out group-hover:opacity-50"></div>
+                            <div class="absolute bottom-0 left-0 p-8">
+                                <h3 class="text-2xl font-semibold text-white mb-2">Pantai</h3>
+                                <p class="text-white opacity-90">Nikmati keindahan pantai-pantai eksotis Bali</p>
+                            </div>
+                        </a>
+
+                        <!-- Gunung Card -->
+                        <a href="/Html/Gunung/DestinationGunung.html" class="group relative overflow-hidden rounded-lg transition-transform duration-500 ease-in-out transform hover:scale-105">
+                            <img src="/img/stand/Gunung/gunung.jpg" class="w-full h-[500px] object-cover transform group-hover:scale-105 transition-transform duration-300" alt="Gunung"/>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                            <div class="absolute bottom-0 left-0 p-8">
+                                <h3 class="text-2xl font-semibold text-white mb-2">Gunung</h3>
+                                <p class="text-white opacity-90">Jelajahi pemandangan indah dari gunung-gunung Bali</p>
+                            </div>
+                        </a>
+
+                        <!-- Pura Card -->
+                        <a href="/Html/Pura/DestinationPura.html" class="group relative overflow-hidden rounded-lg transition-transform duration-500 ease-in-out transform hover:scale-105">
+                            <img src="/img/stand/Temple.jpg" class="w-full h-[500px] object-cover transform group-hover:scale-105 transition-transform duration-300" alt="Pura"/>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                            <div class="absolute bottom-0 left-0 p-8">
+                                <h3 class="text-2xl font-semibold text-white mb-2">Pura</h3>
+                                <p class="text-white opacity-90">Kunjungi pura-pura Bali yang penuh sejarah</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </section>
 
-            <!--Aktivtias -->
-            <section class="py-20">
-                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 class="text-4xl font-[&#39;Prata&#39;] text-custom text-center mb-16">Aktivitas Populer</h2>
-                    <div class="grid grid-cols-3 gap-8">
-                        <!-- card pertama-->
-                        <div class="rounded-lg overflow-hidden shadow-lg">
-                            <img src="/img/stand/trakking.jpg" class="w-full h-48 object-cover" alt="Trekking"/>
-                            <div class="p-6">
-                                <h3 class="text-xl font-semibold mb-3">Trekking</h3>
-                                <p class="text-gray-600 mb-4">Jelajahi keindahan alam Bali dengan trekking di jalur-jalur yang menakjubkan, dari Gunung Batur hingga terasering sawah.</p>
-                                <button class="bg-black text-white px-6 py-2 rounded-lg w-full">Lihat Detail</button>
-                            </div>
-                        </div>
-                        <!--card kedua-->
-                        <div class="rounded-lg overflow-hidden shadow-lg">
-                            <img src="/img/stand/snorkling.jpg" class="w-full h-48 object-cover" alt="Snorkeling"/>
-                            <div class="p-6">
-                                <h3 class="text-xl font-semibold mb-3">Snorkeling</h3>
-                                <p class="text-gray-600 mb-4">Temukan keindahan bawah laut Bali dengan snorkeling di spot-spot terbaik seperti Nusa Penida dan Amed.</p>
-                                <button class="bg-black text-white px-6 py-2 rounded-lg w-full">Lihat Detail</button>
-                            </div>
-                        </div>
-                        <!-- card ketiga-->
-                        <div class="rounded-lg overflow-hidden shadow-lg">
-                            <img src="/img/stand/rafting.jpg" class="w-full h-48 object-cover" alt="Rafting"/>
-                            <div class="p-6">
-                                <h3 class="text-xl font-semibold mb-3">Rafting</h3>
-                                <p class="text-gray-600 mb-4">Rasakan sensasi petualangan dengan rafting di Sungai Ayung atau Telaga Waja yang menantang.</p>
-                                <button class="bg-black text-white px-6 py-2 rounded-lg w-full">Lihat Detail</button>
-                            </div>
-                        </div>
-                    </section>
 
-                    <section class="py-20 bg-gray-50">
-                        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                          <h2 class="text-4xl font-[&#39;Prata&#39;] text-custom text-center mb-16">Eksplore Bali</h2>
-                          
-                          <!-- Grid untuk card Pantai, Gunung, dan Pura -->
-                          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                            <!-- Card Pantai -->
-                            <a href="/Html/Pantai/DestinationPantai.html" class="group relative overflow-hidden rounded-lg">
-                              <img src="/img/stand/pantai.jpg" class="w-full h-[500px] object-cover transform group-hover:scale-105 transition-transform duration-300" alt="Pantai"/>
-                              <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
-                              <div class="absolute bottom-0 left-0 p-8">
-                                <h3 class="text-2xl font-semibold text-white mb-2">Pantai</h3>
-                                <p class="text-white opacity-90">Nikmati keindahan pantai-pantai eksotis Bali</p>
-                              </div>
+        <!-- Footer -->
+        <footer class="bg-black text-white py-12 opacity-0 transition-opacity duration-1000 ease-in-out scroll-fade">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-4 gap-8">
+                    <div>
+                        <p class="text-sm opacity-80">Temukan keindahan dan keajaiban Pulau Dewata bersama kami.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold mb-4">Tautan</h4>
+                        <ul class="space-y-2 text-sm opacity-80">
+                            <li><a href="#" class="hover:opacity-100">Tentang Kami</a></li>
+                            <li><a href="#" class="hover:opacity-100">Layanan</a></li>
+                            <li><a href="#" class="hover:opacity-100">Destinasi</a></li>
+                            <li><a href="#" class="hover:opacity-100">Kontak</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold mb-4">Kontak</h4>
+                        <ul class="space-y-2 text-sm opacity-80">
+                            <li><i class="fas fa-phone mr-2"></i> +62 361 123456</li>
+                            <li><i class="fas fa-envelope mr-2"></i> info@balitour.com</li>
+                            <li><i class="fas fa-map-marker-alt mr-2"></i> Jl. Sunset Road No. 88, Kuta, Bali</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold mb-4">Media Sosial</h4>
+                        <div class="space-x-4">
+                            <a href="#" class="hover:scale-110 hover:text-blue-500 transition-transform duration-300">
+                                <i class="fab fa-facebook-f text-xl"></i>
                             </a>
-                      
-                            <!-- Card Gunung -->
-                            <a href="/Html/Gunung/DestinationGunung.html" class="group relative overflow-hidden rounded-lg">
-                              <img src="/img/stand/Gunung/gunung.jpg" class="w-full h-[500px] object-cover transform group-hover:scale-105 transition-transform duration-300" alt="Gunung"/>
-                              <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
-                              <div class="absolute bottom-0 left-0 p-8">
-                                <h3 class="text-2xl font-semibold text-white mb-2">Gunung</h3>
-                                <p class="text-white opacity-90">Jelajahi pemandangan indah dari gunung-gunung Bali</p>
-                              </div>
+                            <a href="#" class="hover:scale-110 hover:text-pink-500 transition-transform duration-300">
+                                <i class="fab fa-instagram text-xl"></i>
                             </a>
-                      
-                            <!-- Card Pura -->
-                            <a href="/Html/Pura/DestinationPura.html" class="group relative overflow-hidden rounded-lg">
-                              <img src="/img/stand/Temple.jpg" class="w-full h-[500px] object-cover transform group-hover:scale-105 transition-transform duration-300" alt="Pura"/>
-                              <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
-                              <div class="absolute bottom-0 left-0 p-8">
-                                <h3 class="text-2xl font-semibold text-white mb-2">Pura</h3>
-                                <p class="text-white opacity-90">Kunjungi pura-pura Bali yang penuh sejarah</p>
-                              </div>
+                            <a href="#" class="hover:scale-110 hover:text-blue-400 transition-transform duration-300">
+                                <i class="fab fa-twitter text-xl"></i>
                             </a>
-                          </div>
                         </div>
-                      </section>
-
-                      <!--footer-->
-                      <footer class="bg-black text-white py-12">
-                        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                            <div class="grid grid-cols-4 gap-8">
-                                <div>
-                                    <p class="text-sm opacity-80">Temukan keindahan dan keajaiban Pulau Dewata bersama kami.</p>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold mb-4">Tautan</h4>
-                                    <ul class="space-y-2 text-sm opacity-80">
-                                        <li><a href="#" class="hover:opacity-100">Tentang Kami</a></li>
-                                        <li><a href="#" class="hover:opacity-100">Layanan</a></li>
-                                        <li><a href="#" class="hover:opacity-100">Destinasi</a></li>
-                                        <li><a href="#" class="hover:opacity-100">Kontak</a></li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold mb-4">Kontak</h4>
-                                    <ul class="space-y-2 text-sm opacity-80">
-                                        <li><i class="fas fa-phone mr-2"></i> +62 361 123456</li>
-                                        <li><i class="fas fa-envelope mr-2"></i> info@balitour.com</li>
-                                        <li><i class="fas fa-map-marker-alt mr-2"></i> Jl. Sunset Road No. 88, Kuta, Bali</li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold mb-4">Media Sosial</h4>
-                                    <div class="flex space-x-4">
-                                        <a href="#" class="hover:opacity-80"><i class="fab fa-facebook-f text-xl"></i></a>
-                                        <a href="#" class="hover:opacity-80"><i class="fab fa-instagram text-xl"></i></a>
-                                        <a href="#" class="hover:opacity-80"><i class="fab fa-twitter text-xl"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="border-t border-white border-opacity-20 mt-8 pt-8 text-center text-sm opacity-80">
-                                <p>© 2024 Bali Tour. Hak Cipta Dilindungi.</p>
-                            </div>
-                        </div>
-                    </footer>
-                      
+                    </div>
+                </div>
+                <div class="border-t border-white border-opacity-20 mt-8 pt-8 text-center text-sm opacity-80">
+                    <p>© 2024 Bali Tour. Hak Cipta Dilindungi.</p>
+                </div>
+            </div>
+        </footer>
     </main>
 </body>
 </html>

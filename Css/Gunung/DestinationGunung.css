@@ -1,0 +1,136 @@
+/* Animasi untuk Header */
+@keyframes fade-in-slide-up {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Terapkan animasi pada teks header */
+.header-text {
+    animation: fade-in-slide-up 1.5s ease-out forwards;
+}
+
+/* Animasi Zoom-In untuk Gambar Header */
+@keyframes zoom-in {
+    0% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.header-image {
+    animation: zoom-in 2s ease-in-out forwards;
+}
+
+/* Animasi untuk Aktivitas */
+@keyframes fade-in-scale {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.activity-card {
+    animation: fade-in-scale 1s ease-out forwards;
+}
+
+/* Animasi Zoom-In untuk Gambar Galeri */
+@keyframes zoom-in-gallery {
+    0% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.gallery-image {
+    animation: zoom-in-gallery 2s ease-out forwards;
+}
+
+/* Efek hover untuk gambar */
+.gallery-image:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Efek Hover untuk Tombol */
+.btn-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-hover:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Animasi untuk Rekomendasi Gunung */
+@keyframes fade-in-up {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.gunung-card {
+    animation: fade-in-up 1s ease-out forwards;
+}
+
+/* Hover Effects untuk Kartu Gunung */
+.gunung-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efek Hover untuk Tombol */
+.btn-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-hover:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+/* Animasi untuk Galeri Foto */
+@keyframes fade-in-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Aplikasikan animasi pada gambar dalam galeri */
+.gallery-img {
+    animation: fade-in-left 1s ease-out forwards;
+}
+
+/* Efek Hover pada Gambar */
+.gallery-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
